@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de"><meta name="robots" content="noindex"><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>TB-Screening ohne § 36-Indikation (neutral)</title><style>
+:root{--navy:#1f3b57;--red:#e10019;--blue:#2b6a8f;--pale:#f4f6f8;--line:#d8dee6;--ink:#1d2d3e;--muted:#526477}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--pale);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}h1,h2{font-family:Arial,Helvetica,sans-serif}h1{font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:0;margin:0;color:var(--navy)}h2{font-size:22px;color:var(--navy);margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid #e5eaf0}p{margin:8px 0 14px}small{color:var(--muted)}
+header{background:#fff;color:var(--ink);padding:0;border:0}.head-inner{max-width:1180px;margin:auto;padding:26px 24px 24px}.eyebrow{font-size:12px;text-transform:uppercase;font-weight:bold;letter-spacing:.07em;color:var(--navy);margin-bottom:10px}.head-meta{margin:10px 0 0;color:var(--muted);font-size:14px}
+main{max-width:1180px;margin:auto;padding:28px 24px 45px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:22px}section{background:#fff;padding:26px;border:1px solid var(--line);border-radius:3px;box-shadow:0 2px 12px rgba(31,59,87,.035);min-width:0}section:first-child>p{color:var(--muted);font-size:14px}section:nth-child(2){border-top:4px solid var(--navy)}label{display:block;font-size:14px;color:#283e52;font-weight:bold;margin:17px 0 6px}select,input{display:block;box-sizing:border-box;width:100%;min-height:44px;border:1px solid #9dadbe;border-radius:3px;background:#fff;color:var(--ink);font:inherit;padding:9px 12px}select:focus-visible,input:focus-visible,button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #2b6a8f;outline-offset:3px}select:hover,input:hover{border-color:var(--navy)}[hidden]{display:none!important}button{min-height:44px;border-radius:3px;border:1px solid var(--navy);padding:10px 16px;font:bold 14px Arial,sans-serif;background:var(--navy);color:white;cursor:pointer;margin:20px 8px 0 0}button:hover{background:#2b6a8f}button#reset{background:white;color:var(--navy)}button#reset:hover{background:#eef2f7}#epi{font-size:14px;font-weight:bold;color:var(--navy);margin-top:10px}#out{min-height:85px}.result{border:0;border-bottom:1px solid var(--line);background:#fff;padding:18px 0;margin:0}.result:last-child{border-bottom:0}.result strong{display:block;font-size:12px;line-height:1.5;letter-spacing:.045em;text-transform:uppercase;color:var(--navy)}.result p{margin:9px 0 3px;font-size:17px;line-height:1.55}.result p b{color:var(--navy)}.result.urgent{border:2px solid var(--red);background:#fff5f6;padding:13px 15px;margin-top:14px}.result.urgent strong,.result.urgent p b{color:#9d0013}details{margin-top:10px;color:var(--muted);font-size:13px}summary{cursor:pointer;line-height:1.5}section>details{margin-top:24px;border-top:1px solid var(--line);padding-top:14px}a{color:var(--blue)}.footer{margin-top:10px;background:var(--navy);color:#fff;min-height:62px;display:flex;justify-content:center;align-items:center;padding:18px 24px;font-size:13px}.footer-inner{max-width:1132px;width:100%;display:flex;justify-content:space-between;gap:14px;align-items:center}.footer a{color:#fff}
+@media(min-width:850px){main>section:nth-child(2){position:sticky;top:18px}}@media(max-width:849px){main{grid-template-columns:1fr;padding:16px;gap:16px}section{padding:20px}.head-inner{padding:22px 18px}.hh-brand{padding-right:18px}.hh-bar{height:48px}.hh-bar .hh-bug{height:37px;width:129px}}@media(max-width:450px){.hh-brand img{height:34px}h1{font-size:27px}.footer-inner{display:block}section{padding:17px}}
+@media print{body{background:#fff}header{background:#fff}.hh-bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}main{display:block;padding:8px}section{break-inside:avoid;box-shadow:none;border:0;padding:14px 0}main>section:nth-child(2){position:static}button{display:none}.footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;border-bottom:2px solid #e5eaf0}.tabs button{margin:0;background:#fff;color:var(--navy);border:1px solid var(--line);border-bottom:0;border-radius:3px 3px 0 0}.tabs button[aria-selected=true]{background:var(--navy);color:#fff;border-color:var(--navy)}.legend{font-size:13px;color:var(--muted)}#svgwrap{overflow-x:auto;border:1px solid var(--line);background:#fff}#svgwrap svg{display:block;width:100%;min-width:1000px;height:auto}#svgwrap .nd{transition:opacity .2s}#svgwrap .e{transition:opacity .2s}#svgwrap.hl .e{opacity:.45}#svgwrap.hl .e.on{opacity:1;stroke:#1f2a44;stroke-width:5;marker-end:url(#uma-arr2)}#svgwrap.hl path.e.on{stroke:#e0693c}#svgwrap.hl .nd{opacity:.4}#svgwrap.hl .nd.vis{opacity:1}#svgwrap .nd.vis rect,#svgwrap .nd.vis polygon{stroke-width:4}#svgwrap .nd.cur rect,#svgwrap .nd.cur polygon{stroke:#e10019;stroke-width:6}.tw{overflow-x:auto}.tw table{border-collapse:collapse;width:100%;font-size:14px}.tw th,.tw td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}.tw th{color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.04em}.steps{list-style:none;margin:9px 0 3px;padding:0}.steps li{display:grid;grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:4px 12px;padding:6px 0 6px 10px;border-left:3px solid #c9d3de;font-size:14px;line-height:1.45;margin:0 0 4px}.steps li.done{color:var(--muted)}.steps li.cur{border-left-color:var(--red);background:#fff5f6;color:var(--ink);font-weight:bold}.steps .who{font-size:12px;color:var(--navy);font-weight:bold}.next-who{margin:6px 0 0;font-size:14px;color:var(--navy)}.tolink{font-size:13px}
+@media(max-width:600px){.steps li{grid-template-columns:1fr}}
+@media print{.tabs{display:none}#panel-matrix{display:block!important}#svgwrap{overflow:visible}#svgwrap svg{min-width:0}main>section.wide{break-before:page}}
+@media(min-width:850px){main>section:nth-child(2){position:static}}
+
+.nh{background:var(--navy);color:#fff}.nh-in{max-width:1180px;margin:auto;padding:18px 24px}
+.nh small{display:block;font-size:13px;color:#d5e0ea;letter-spacing:.02em}.nh strong{display:block;font-size:24px;line-height:1.3}
+.zbar{margin:0 0 8px}.zbar button{margin:0}.titleband{background:#fff}.backlink{display:inline-block;margin:0 0 14px;padding:10px 18px;background:var(--navy);color:#fff!important;font-size:18px;font-weight:bold;text-decoration:none!important;border-radius:3px;line-height:1.2}
+.backlink:hover{background:#2b5a7a}.backlink:focus-visible{background:#2b5a7a;outline:3px solid var(--navy);outline-offset:2px}
+.nf{background:var(--navy);color:#fff;margin-top:40px}.nf-in{max-width:1180px;margin:auto;padding:24px;font-size:14px;line-height:1.6}
+.nf a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media print{.zbar{display:none}.backlink{display:none}.nh,.nf{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+<body><div class="nh"><div class="nh-in"><small>Entscheidungshilfe für Gesundheitsämter und ärztliche Praxen</small><strong>Tuberkulose-Screening bei Zugewanderten</strong></div></div><div class="titleband"><div class="head-inner"><a class="backlink" href="index.html">← Zurück zur Auswahl</a><div class="eyebrow">Tuberkulose-Screening · Neutrale Fassung</div><h1>TB-Screening ohne § 36-Indikation</h1><p class="head-meta">Interaktive Entscheidungshilfe für Haus-, Betriebs- und weitere Ärztinnen und Ärzte · freiwilliges Screening · S3-Leitlinie TB-Risk 2025 · Version 1.4 · Stand 23.11.2026</p></div></div><main><section><h2>Risikoabfrage</h2><p>Empfehlungen für ein freiwilliges Screening ohne Anordnung nach § 36 IfSG, zum Beispiel in der hausärztlichen oder betriebsärztlichen Praxis. Es gibt keine gesetzliche Verpflichtung. Unterschieden werden das <b>TB-Screening</b> (Ausschluss einer aktiven Tuberkulose) und das <b>TBI-Screening</b> (Erkennung einer latenten Infektion). Keine personenbezogenen Daten erforderlich.</p><div class="dbar" id="dbar">Datenstand Inzidenz und MDR/RR: <span id="dstand">eingebettete Tabelle (Stand 22.11.2026)</span> <button type="button" id="dbtn">Daten aktualisieren</button></div><form id="f"><label>Alter (vollendete Jahre)</label><input id="age" max="110" min="0" placeholder="0–110" required="" step="1" type="number"/><label>Herkunftsland</label><select id="country"><option value="">Bitte wählen / unbekannt</option></select><label>Längerer Aufenthalt in einem weiteren Land in den letzten 12 Monaten vor Einreise (optional)</label><select id="transit"><option value="">Keines / unbekannt</option></select><div id="epi"></div><div id="questions"></div><div hidden="" id="igwrap"><label for="igresult">QFT-Befund</label><select id="igresult"><option value="">Noch ausstehend</option><option value="pos">Positiv</option><option value="neg">Negativ</option><option value="ind">Nicht verwertbar</option><option value="declined">Abgelehnt / nicht durchgeführt</option></select></div><div hidden="" id="rxwrap"><label for="rxresult">Röntgenbefund</label><select id="rxresult"><option value="">Noch ausstehend</option><option value="normal">Unauffällig</option><option value="abn">TB-verdächtig</option></select></div><button id="reset" type="button">Neue Abfrage</button><button onclick="print()" type="button">Drucken / PDF</button></form></section><section><h2>Handlungsplan</h2><div aria-live="polite" id="out"></div><details><summary>Allgemeine Grundlagen und Grenzen</summary><p>S3 TB-Risk, AWMF 020-029, Version 1.0, September 2025: Empfehlungen 1–3 (TBI-Screening nach Alter), 4, 5, 6–8, 11, 16, 19, P1, P2, P4. <a href="https://register.awmf.org/de/leitlinien/detail/020-029">AWMF-Leitlinie</a></p><p>Länderdaten: hochgeladene TB-Risikoabfrage.xlsx, WHO-Schätzjahr 2024 laut Arbeitsmappe. Fehlende MDR-Werte werden nicht als 0 gewertet. Keine automatische Aktualisierung. Weitere regionale Daten können die ärztliche Bewertung ändern.</p><p>Version 1.6 gilt für Untersuchungen ohne Anordnung nach § 36 IfSG. Alle Maßnahmen sind Empfehlungen der S3-Leitlinie TB-Risk, keine gesetzliche Verpflichtung; es gibt kein Zeugnis. <b>TB-Screening</b> (Symptomabfrage und Röntgen-Thorax, Empf. 11) soll eine aktive, ggf. ansteckungsfähige Tuberkulose ausschließen. <b>TBI-Screening</b> (QFT, Empf. 1–3, P1, P2) soll eine latente Infektion erkennen, damit eine präventive Therapie die Erkrankung verhindern kann. Bei Kindern unter 15 Jahren und Schwangeren ist der QFT zugleich der erste Schritt des TB-Screenings; das Röntgen folgt nur bei positivem QFT. Ein Screening nach Herkunft kommt bei Inzidenz im Herkunftsland &gt;100/100.000 in Betracht; bei Kindern unter 5 Jahren zusätzlich bei geflüchteten Kindern unabhängig vom Herkunftsland (Empf. P2). Voraussetzungen: Einreise in den letzten 2 Jahren (Empf. 1–3, P1), bei TB-Screening ab 15 Jahren ein voraussichtlicher Aufenthalt über 3 Monate (Empf. 11). Bei Tätigkeit oder Unterbringung in Bereichen mit vulnerablen Gruppen oder mit Ausbruchspotenzial sowie bei zusätzlichen Risikofaktoren gilt eine SOLL-Empfehlung für das TB-Screening, auch bei MDR/RR-Rate &gt;10 % (Empf. 12). Geflüchtete Kinder von 5 bis 14 Jahren werden mit einem Risikofaktor einbezogen (Empf. P2); komplexe Migrationsbedingungen erlauben ein TBI-Screening unabhängig von Alter und Inzidenz (Empf. 4, KANN). Die MDR/RR-Rate bestimmt außerdem die präventive Therapie (Empf. 7/8). Der QFT kann nur bei immunkompetenten, symptomfreien Personen unter 65 Jahren ohne Risikofaktoren das Röntgen ersetzen (Empf. 16). Das Angebot soll freiwillig, kostenfrei und unabhängig vom Aufenthaltsstatus sein (Empf. 23). Bei Kontaktpersonen erfolgt die Abstimmung mit dem Tuberkulose-Zentrum (Umgebungsuntersuchung). Arbeitsmedizinische Vorsorge nach ArbMedVV ist nicht Gegenstand dieser Hilfe. Keine rechtsverbindliche Freigabe oder ärztliche Diagnose.</p></details><details><summary>Änderungsverlauf</summary><p><b>Version 1.4, Stand 23.11.2026:</b> Eigenständiges Projekt (eigenes Repository, nicht mehr Unterseite der Hamburger Fassung); Pfade der Datendatei angepasst.</p><p>
+<b>Version 1.3, Stand 23.11.2026:</b> Knopf „Daten aktualisieren“ für Inzidenz und MDR/RR-Anteil: lädt daten.json (monatlich per GitHub-Aktion aus den WHO-Daten gepflegt), zeigt vor der Übernahme eine Änderungsliste mit Hinweis auf geänderte Einstufung.</p><p>
+<b>Version 1.2, Stand 21.11.2026:</b> Prozessschema zoomt auf den aktuellen Schritt (Schalter „Zoom auf aktuellen Schritt“, Gesamtansicht wählbar); Farbgebung Dunkelblau.</p><p><b>Version 1.1, Stand 21.11.2026:</b> Farbgebung Anthrazit statt Blau.</p><p><b>Version 1.0, Stand 21.11.2026:</b> Erstfassung der neutralen Fassung ohne Länderbezug für Haus-, Betriebs- und weitere Ärztinnen und Ärzte (freiwilliges Screening ohne Indikation nach § 36 IfSG).</p></details></section><section class="wide" id="schema"><h2>Prozessschema und Zuständigkeiten</h2><div class="tabs" role="tablist"><button aria-selected="true" id="tab-schema" role="tab" type="button">Prozessschema</button><button aria-selected="false" id="tab-matrix" role="tab" type="button">Zuständigkeitsmatrix</button></div><div id="panel-schema" role="tabpanel"><p class="legend">Nach Eingabe der Angaben sind die durchlaufenen Schritte hervorgehoben, der aktuelle Schritt trägt einen roten Rahmen. Die Bahnen zeigen die zuständige Stelle.</p><div class="zbar"><button aria-pressed="true" id="zbtn" type="button">Zoom auf aktuellen Schritt: an</button></div><div id="svgwrap"><svg id="schema-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1850 2420" role="img" aria-label="Swimlane-Prozessschema Screening ohne § 36-Indikation mit Zuständigkeiten" font-family="Arial, Helvetica, sans-serif">
+<defs><marker id="uma-arr" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="16" refX="19" refY="8" orient="auto"><path d="M0,0 L20,8 L0,16 z" fill="#555"/></marker><marker id="uma-arr2" markerUnits="userSpaceOnUse" markerWidth="26" markerHeight="20" refX="25" refY="10" orient="auto"><path d="M0,0 L26,10 L0,20 z" fill="#1f2a44"/></marker></defs>
+<rect width="1850" height="2420" fill="#fff"/>
+<text x="925.0" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2a44">Screening auf Tuberkulose und TBI ohne Indikation nach § 36 IfSG (Haus-, Betriebs- und weitere Ärzt(inn)en) – Prozess mit Zuständigkeiten</text>
+<rect x="10" y="56" width="390" height="2344" fill="#e8eef8" stroke="#9aa5bd" stroke-width="1.5"/>
+<rect x="10" y="56" width="390" height="58" fill="#1f2a44"/>
+<text x="205.0" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Pädiatrie / Pädiatrische Radiologie</text>
+<text x="205.0" y="102" text-anchor="middle" font-size="12"  fill="#dfe6f5">(Kinderkrankenhaus / Kinderradiologie / Pädiater)</text>
+<rect x="400" y="56" width="650" height="2344" fill="#ffffff" stroke="#9aa5bd" stroke-width="1.5"/>
+<rect x="400" y="56" width="650" height="58" fill="#1f2a44"/>
+<text x="725.0" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Haus-, Betriebs- und weitere Ärzt(inn)en</text>
+<text x="725.0" y="102" text-anchor="middle" font-size="12"  fill="#dfe6f5">Praxis: Anamnese, Veranlassung, QFT-Abnahme</text>
+<rect x="1050" y="56" width="240" height="2344" fill="#e8eef8" stroke="#9aa5bd" stroke-width="1.5"/>
+<rect x="1050" y="56" width="240" height="58" fill="#1f2a44"/>
+<text x="1170.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Radiologie</text>
+<text x="1170.0" y="102" text-anchor="middle" font-size="12.5"  fill="#dfe6f5">Röntgen-Thorax ab 15 Jahren</text>
+<rect x="1290" y="56" width="270" height="2344" fill="#ffffff" stroke="#9aa5bd" stroke-width="1.5"/>
+<rect x="1290" y="56" width="270" height="58" fill="#1f2a44"/>
+<text x="1425.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Ambulante Pneumologie</text>
+<text x="1425.0" y="102" text-anchor="middle" font-size="12.5"  fill="#dfe6f5">und Infektiologie</text>
+<rect x="1560" y="56" width="280" height="2344" fill="#e8eef8" stroke="#9aa5bd" stroke-width="1.5"/>
+<rect x="1560" y="56" width="280" height="58" fill="#1f2a44"/>
+<text x="1700.0" y="82" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Gesundheitsamt</text>
+<text x="1700.0" y="102" text-anchor="middle" font-size="12.5"  fill="#dfe6f5">TB-Beratung</text>
+<g id="n-start" class="nd">
+<rect x="490.0" y="132.0" width="300" height="76" rx="10" fill="#ece7dc" stroke="#8a7f6a" stroke-width="2"/>
+<text x="640" y="156.0" text-anchor="middle" font-size="16" font-weight="700" fill="#33302a">Screening ohne Indikation</text>
+<text x="640" y="175.0" text-anchor="middle" font-size="13.5"  fill="#33302a">nach § 36 IfSG</text>
+<text x="640" y="194.0" text-anchor="middle" font-size="13.5"  fill="#33302a">(ärztliche Empfehlung, freiwillig)</text>
+</g>
+<polyline class="e" data-e="start>anam" points="640,208 640,262" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-anam" class="nd">
+<rect x="525.0" y="262.0" width="230" height="66" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="640" y="290.5" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">Anamnese und</text>
+<text x="640" y="309.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">klinische Untersuchung</text>
+</g>
+<polyline class="e" data-e="anam>sym" points="640,328 640,365" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-sym" class="nd">
+<polygon points="640,365.0 790.0,420 640,475.0 490.0,420" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="416.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Typische TB-Symptome</text>
+<text x="640" y="434.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">oder Befunde?</text>
+</g>
+<polyline class="e" data-e="sym>contact" points="640,475 640,525" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="508" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<polyline class="e" data-e="sym>abklk" data-c="child" points="490,420 345,420" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="350" y="408" font-size="16" font-weight="700" font-style="italic" fill="#222">ja, unter 15 J.</text>
+<polyline class="e" data-e="sym>abkl" data-c="adult" points="790,420 1310,420" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="930" y="408" font-size="16" font-weight="700" font-style="italic" fill="#222">ja, ab 15 J.</text>
+<g id="n-contact" class="nd">
+<polygon points="640,525.0 800.0,580 640,635.0 480.0,580" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="576.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Infektionsrelevanter</text>
+<text x="640" y="594.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">TB-Kontakt?</text>
+</g>
+<polyline class="e" data-e="contact>orig" points="640,635 640,655" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="664" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<polyline class="e" data-e="contact>qft" data-c="con" points="480,580 440,580 440,1690 490,1690" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="448" y="568" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<text x="448" y="600" font-size="13" font-weight="700" fill="#3b2a7a">TBI</text>
+<polyline class="e" data-e="contact>tzb" data-c="con" points="800,580 1600,580" fill="none" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#uma-arr)"/>
+<text x="1020" y="568" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<g id="n-orig" class="nd">
+<polygon points="640,655.0 820.0,750 640,845.0 460.0,750" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="728.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Neu zugewandert (≤2 J.),</text>
+<text x="640" y="746.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Inzidenz &gt;100/100.000 oder</text>
+<text x="640" y="764.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">geflüchtetes Kind (&lt;5 J.;</text>
+<text x="640" y="782.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">5–14 J. + Risikofaktor)?</text>
+</g>
+<polyline class="e" data-e="orig>kein" points="820,750 860,750" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="818" y="738" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-kein" class="nd">
+<rect x="860.0" y="708.0" width="180" height="84" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
+<text x="950" y="736.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Kein Screening</text>
+<text x="950" y="755.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">empfohlen</text>
+<text x="950" y="774.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(nur Information)</text>
+</g>
+<polyline class="e" data-e="orig>u15" points="640,845 640,875" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="858" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<g id="n-u15" class="nd">
+<polygon points="640,875.0 760.0,930 640,985.0 520.0,930" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="926.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Unter 15 Jahre</text>
+<text x="640" y="944.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">alt?</text>
+</g>
+<polyline class="e" data-e="u15>qft" data-c="child" points="520,930 440,930 440,1690 490,1690" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="448" y="918" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<text x="448" y="950" font-size="13" font-weight="700" fill="#3b2a7a">TB+TBI</text>
+<polyline class="e" data-e="u15>preg" points="640,985 640,1035" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="1018" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-preg" class="nd">
+<polygon points="640,1040.0 760.0,1090 640,1140.0 520.0,1090" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="1095.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Schwangerschaft?</text>
+</g>
+<polyline class="e" data-e="preg>qft" data-c="preg" points="530,1090 440,1090 440,1690 490,1690" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="448" y="1078" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<text x="448" y="1110" font-size="13" font-weight="700" fill="#3b2a7a">TB+TBI</text>
+<polyline class="e" data-e="preg>rxv" points="640,1140 640,1195" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="1172" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-rxv" class="nd">
+<rect x="510.0" y="1202.0" width="260" height="76" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="640" y="1226.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">TB-Screening empfehlen:</text>
+<text x="640" y="1245.0" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">Röntgen-Thorax</text>
+<text x="640" y="1264.0" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">(Symptomabfrage + Röntgen)</text>
+</g>
+<polyline class="e" data-e="rxv>rx" points="770,1240 1065,1240" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="780" y="1196" font-size="12" fill="#3b2a7a">Aufenthalt >3 Monate (Empf. 11);</text>
+<text x="780" y="1210" font-size="12" fill="#3b2a7a">vulnerables Umfeld oder Risiko-</text>
+<text x="780" y="1224" font-size="12" fill="#3b2a7a">faktor: SOLL, auch MDR/RR >10 % (12)</text>
+<g id="n-rx" class="nd">
+<rect x="1065.0" y="1202.0" width="210" height="76" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="1170" y="1226.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">Röntgen-Thorax-</text>
+<text x="1170" y="1245.0" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">Untersuchung ab 15 J.</text>
+<text x="1170" y="1264.0" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">(Ziel: aktive TB)</text>
+</g>
+<polyline class="e" data-e="rx>rxauf" points="1170,1278 1170,1322" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-rxauf" class="nd">
+<polygon points="1170,1325.0 1265.0,1380 1170,1435.0 1075.0,1380" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="1170" y="1376.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Röntgenbefund</text>
+<text x="1170" y="1394.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">auffällig?</text>
+</g>
+<polyline class="e" data-e="rxauf>abkl" points="1265,1380 1425,1380" fill="none" stroke="#555" stroke-width="2" />
+<text x="1275" y="1368" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<polyline class="e" data-e="rxauf>qftq" points="1075,1380 830,1380" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="985" y="1368" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-qftq" class="nd">
+<polygon points="640,1300.0 830.0,1380 640,1460.0 450.0,1380" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="1358.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">TBI-Screening (QFT) empfehlen?</text>
+<text x="640" y="1376.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">15–35 J.: SOLL · 36–45 J.: SOLLTE</text>
+<text x="640" y="1394.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">&gt;45 J.: KANN, nur bei</text>
+<text x="640" y="1412.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Inzidenz &gt;150/100.000</text>
+</g>
+<polyline class="e" data-e="qftq>qft" points="450,1380 440,1380 440,1690 490,1690" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="448" y="1368" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<text x="448" y="1400" font-size="13" font-weight="700" fill="#3b2a7a">TBI</text>
+<polyline class="e" data-e="qftq>keinq" points="640,1460 640,1503" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="1485" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-keinq" class="nd">
+<rect x="535.0" y="1501.0" width="210" height="78" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
+<text x="640" y="1526.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Kein TBI-Screening</text>
+<text x="640" y="1545.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">empfohlen</text>
+<text x="640" y="1564.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(Röntgen unauffällig)</text>
+</g>
+<g id="n-qft" class="nd">
+<rect x="490.0" y="1648.0" width="300" height="84" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="640" y="1666.5" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">QFT-Abnahme</text>
+<text x="640" y="1685.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">Ziel am Zugangspfeil: TBI oder</text>
+<text x="640" y="1704.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">TB+TBI (zugleich erster Schritt</text>
+<text x="640" y="1723.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">des TB-Screenings)</text>
+</g>
+<polyline class="e" data-e="qft>qftpos" points="640,1732 640,1768" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-qftpos" class="nd">
+<polygon points="640,1765.0 740.0,1820 640,1875.0 540.0,1820" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="1825.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">QFT positiv?</text>
+</g>
+<polyline class="e" data-e="qftpos>keinw" points="740,1820 860,1820" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="750" y="1808" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-keinw" class="nd">
+<rect x="860.0" y="1784.0" width="180" height="72" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
+<text x="950" y="1806.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">QFT negativ:</text>
+<text x="950" y="1825.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">kein weiterer</text>
+<text x="950" y="1844.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">Schritt</text>
+</g>
+<polyline class="e" data-e="qftpos>u15b" points="640,1875 640,1920" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="652" y="1905" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<g id="n-u15b" class="nd">
+<polygon points="640,1920.0 740.0,1970 640,2020.0 540.0,1970" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="640" y="1966.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Unter 15 Jahre</text>
+<text x="640" y="1984.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">alt?</text>
+</g>
+<polyline class="e" data-e="u15b>rxk" points="540,1970 345,1970" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="445" y="1958" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<polyline class="e" data-e="u15b>trufalls" points="740,1970 1065,1970" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="752" y="1958" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-trufalls" class="nd">
+<rect x="1065.0" y="1920.0" width="210" height="100" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="1170" y="1946.5" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">Röntgen-Thorax</text>
+<text x="1170" y="1965.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">Ausschluss aktive TB,</text>
+<text x="1170" y="1984.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">falls noch nicht erfolgt</text>
+<text x="1170" y="2003.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">(Schwangere: ärztl. Abwägung)</text>
+</g>
+<polyline class="e" data-e="trufalls>truauf" points="1170,2020 1170,2062" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-truauf" class="nd">
+<polygon points="1170,2060.0 1265.0,2110 1170,2160.0 1075.0,2110" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="1170" y="2106.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Befund</text>
+<text x="1170" y="2124.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">auffällig?</text>
+</g>
+<polyline class="e" data-e="truauf>abkl" points="1265,2110 1425,2110 1425,470" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="1275" y="2098" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<polyline class="e" data-e="truauf>pt" points="1170,2160 1170,2245 1300,2245" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="1182" y="2195" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-abkl" class="nd">
+<rect x="1310.0" y="365.0" width="230" height="110" rx="10" fill="#fbe0d3" stroke="#e0693c" stroke-width="2"/>
+<text x="1425" y="396.5" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Abklärung aktive TB</text>
+<text x="1425" y="415.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">ambulante Pneumologie</text>
+<text x="1425" y="434.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">oder Infektiologie,</text>
+<text x="1425" y="453.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">ggf. stationär, Behandlung</text>
+</g>
+<g id="n-pt" class="nd">
+<rect x="1300.0" y="2180.0" width="250" height="130" rx="10" fill="#fbe0d3" stroke="#e0693c" stroke-width="2"/>
+<text x="1425" y="2212.0" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Präventive Therapie</text>
+<text x="1425" y="2231.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">ab 15 Jahren</text>
+<text x="1425" y="2250.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(bevorzugt 4R oder 3HR)</text>
+<text x="1425" y="2269.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Pneumologie, Infektiologie</text>
+<text x="1425" y="2288.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">oder Hausarztpraxis</text>
+</g>
+<g id="n-tzb" class="nd">
+<rect x="1600.0" y="532.0" width="200" height="96" rx="10" fill="#fdf1ec" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1700" y="556.5" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Beratung, ggf.</text>
+<text x="1700" y="575.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Umgebungs-</text>
+<text x="1700" y="594.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">untersuchung</text>
+<text x="1700" y="613.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(§ 25 IfSG)</text>
+</g>
+<g id="n-tzm" class="nd">
+<rect x="1585.0" y="2190.0" width="230" height="110" rx="10" fill="#fdf1ec" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="1700" y="2212.0" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Beratung zur</text>
+<text x="1700" y="2231.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">präventiven Therapie;</text>
+<text x="1700" y="2250.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">bei MDR/RR-Herkunft:</text>
+<text x="1700" y="2269.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Nutzen-Risiko-</text>
+<text x="1700" y="2288.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Abwägung</text>
+</g>
+<polyline class="e" data-e="pt>tzm" points="1550,2245 1585,2245" fill="none" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#uma-arr)"/>
+<g id="n-abklk" class="nd">
+<rect x="65.0" y="370.0" width="280" height="100" rx="10" fill="#fbe0d3" stroke="#e0693c" stroke-width="2"/>
+<text x="205" y="406.0" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Abklärung aktive TB</text>
+<text x="205" y="425.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Kinderkrankenhaus,</text>
+<text x="205" y="444.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">ggf. Behandlung</text>
+</g>
+<g id="n-rxk" class="nd">
+<rect x="65.0" y="1920.0" width="280" height="100" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
+<text x="205" y="1946.5" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">Röntgen (Ausschluss</text>
+<text x="205" y="1965.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">aktive TB), Kinder-</text>
+<text x="205" y="1984.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">klinik oder Radiologie</text>
+<text x="205" y="2003.5" text-anchor="middle" font-size="13.5"  fill="#3d2a6b">(Kinderradiologie)</text>
+</g>
+<polyline class="e" data-e="rxk>rxkauf" points="205,2020 205,2060" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<g id="n-rxkauf" class="nd">
+<polygon points="205,2060.0 300.0,2110 205,2160.0 110.0,2110" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
+<text x="205" y="2106.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">Befund</text>
+<text x="205" y="2124.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">auffällig?</text>
+</g>
+<polyline class="e" data-e="rxkauf>ptk" points="205,2160 205,2195" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="217" y="2182" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
+<g id="n-ptk" class="nd">
+<rect x="55.0" y="2200.0" width="300" height="100" rx="10" fill="#fbe0d3" stroke="#e0693c" stroke-width="2"/>
+<text x="205" y="2226.5" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Präventive Therapie</text>
+<text x="205" y="2245.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Kinder</text>
+<text x="205" y="2264.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">Kinderklinik</text>
+<text x="205" y="2283.5" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">oder Kinder- und Jugendärzte</text>
+</g>
+<polyline class="e" data-e="rxkauf>abklk" points="110,2110 28,2110 28,420 65,420" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr)"/>
+<text x="38" y="2098" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
+<text x="640" y="2368" text-anchor="middle" font-size="13.5"  fill="#333">Empfehlungen der S3-Leitlinie TB-Risk, keine gesetzliche Verpflichtung; kein Zeugnis nach § 36 IfSG. Meldepflichten nach IfSG bleiben unberührt.</text>
+</svg></div></div><div hidden="" id="panel-matrix" role="tabpanel"><div class="tw"><table><thead><tr><th>Stelle</th><th>Unter 15 Jahre</th><th>15 Jahre und älter</th></tr></thead><tbody>
+<tr><td><b>Haus-, Betriebs- und weitere Ärzt(inn)en</b></td><td>Anamnese und klinische Untersuchung; TB-Kontakt; Prüfung Herkunftsland (Inzidenz &gt;100/100.000) und Geflüchtete unter 5 Jahren; QFT-Abnahme und Bewertung; Veranlassung des Röntgens bei positivem QFT.</td><td>Anamnese und klinische Untersuchung; TB-Kontakt; Prüfung Herkunftsland (Inzidenz &gt;100/100.000); Schwangerschaft (QFT als Ersttest); Empfehlung TB-Screening (Röntgen-Thorax, Empf. 11); Empfehlung TBI-Screening (QFT) nach Alter (15–35 J. SOLL, 36–45 J. SOLLTE, über 45 J. KANN bei Inzidenz &gt;150/100.000) mit Abnahme und Bewertung; ggf. präventive Therapie in der Hausarztpraxis.</td></tr>
+<tr><td><b>Radiologie</b></td><td>Nicht beteiligt (Kinderradiologie siehe Pädiatrie).</td><td>Röntgen-Thorax-Untersuchung; bei positivem QFT, falls noch nicht erfolgt (Schwangere nur nach ärztlicher Abwägung). Bei fehlenden Symptomen ist bis zum Röntgen keine Quarantäne notwendig.</td></tr>
+<tr><td><b>Ambulante Pneumologie und Infektiologie</b></td><td>Nicht beteiligt.</td><td>Abklärung einer aktiven TB bei Symptomen oder auffälligem Röntgenbefund, ggf. stationär; präventive Therapie bei positivem QFT und unauffälligem Röntgenbefund.</td></tr>
+<tr><td><b>Pädiatrie / Pädiatrische Radiologie</b> (Kinderkrankenhaus, Kinderradiologie, Kinder- und Jugendärzte)</td><td>Röntgen zum Ausschluss einer aktiven TB bei positivem QFT; Abklärung und ggf. Behandlung im Kinderkrankenhaus; präventive Therapie in der Kinderklinik oder bei Kinder- und Jugendärzten.</td><td>Nicht beteiligt.</td></tr>
+<tr><td><b>Gesundheitsamt (TB-Beratung)</b></td><td>Beratung; bei Kontaktpersonen Umgebungsuntersuchung nach § 25 IfSG.</td><td>Beratung; bei Kontaktpersonen Umgebungsuntersuchung nach § 25 IfSG; Beratung und Handreichungen zur präventiven Therapie, bei MDR/RR-Herkunft Rücksprache zur Nutzen-Risiko-Abwägung.</td></tr>
+</tbody></table></div></div></section></main><footer class="nf" id="kontakt"><div class="nf-in"><div><a href="index.html">Zurück zur Auswahl</a> · <a href="https://register.awmf.org/de/leitlinien/detail/020-029" rel="noopener noreferrer" target="_blank">S3-Leitlinie TB-Risk (AWMF 020-029)</a></div><p style="margin:8px 0 0">Version 1.4 · Stand 23.11.2026 · Neutrale Fassung ohne Länderbezug · Fachliche Arbeitsversion, keine automatisierte Diagnose und keine rechtsverbindliche Freigabe. Landesrechtliche Vorgaben, Zuständigkeiten und regionale Versorgungsstrukturen sind ergänzend zu beachten.</p></div></footer><script>const data={"Afghanistan": [203, 0.016], "Albanien": [15, 0.013], "Algerien": [54, 0.018], "Amerikanisch-Samoa": [3.7, null], "Andorra": [4.9, null], "Angola": [373, 0.018], "Anguilla": [0, null], "Antigua und Barbuda": [1.1, null], "Argentinien": [44, 0.016], "Armenien": [19, 0.17], "Aruba": [8.3, null], "Aserbaidschan": [64, 0.12], "Australien": [6.9, 0.023], "Bahamas": [18, 0.032], "Bahrain": [12, 0.019], "Bangladesch": [221, 0.0049], "Barbados": [1, null], "Belarus": [17, 0.39], "Belgien": [2.7, 0.016], "Belize": [34, 0.011], "Benin": [40, 0.0077], "Bermuda": [3.1, null], "Bhutan": [191, 0.12], "Bolivien": [114, 0.015], "Bosnien und Herzegowina": [21, 0.0022], "Botswana": [143, 0.033], "Brasilien": [49, 0.013], "Britische Jungferninseln": [0, null], "Brunei Darussalam": [65, 0.0034], "Bulgarien": [12, 0.019], "Burkina Faso": [57, 0.017], "Burundi": [83, 0.015], "Cabo Verde": [47, 0.0094], "Chile": [19, 0.022], "China": [49, 0.029], "China, Sonderverwaltungszone Hongkong": [66, 0.0092], "China, Sonderverwaltungszone Macau": [59, 0.023], "Cookinseln": [7.3, null], "Costa Rica": [9.3, 0.0089], "Curaçao": [2.8, null], "Demokratische Republik Kongo": [377, 0.014], "Deutschland": [5.4, 0.022], "Dominica": [4.5, null], "Dominikanische Republik": [51, 0.052], "Dschibuti": [495, 0.03], "Dänemark": [3.2, 0.025], "Ecuador": [66, 0.045], "El Salvador": [116, 0.018], "Elfenbeinküste": [99, 0.024], "Eritrea": [115, 0.022], "Estland": [8.2, 0.22], "Eswatini": [319, 0.032], "Fidschi": [104, 0.013], "Finnland": [3.7, 0.043], "Frankreich": [7.8, 0.0064], "Französisch-Polynesien": [24, 0.085], "Gabun": [371, 0.034], "Gambia": [138, 0.0076], "Georgien": [45, 0.097], "Ghana": [126, 0.015], "Grenada": [1.7, null], "Griechenland": [3.6, 0.019], "Grönland": [139, 0.025], "Guam": [55, 0.022], "Guatemala": [28, 0.018], "Guinea": [178, 0.035], "Guinea-Bissau": [176, 0.016], "Guyana": [67, 0.022], "Haiti": [175, 0.032], "Honduras": [38, 0.021], "Indien": [187, 0.036], "Indonesien": [382, 0.018], "Irak": [21, 0.024], "Iran": [10, 0.018], "Irland": [6.2, 0.034], "Island": [3, null], "Israel": [2.4, 0.089], "Italien": [5, 0.028], "Jamaika": [2.3, 0.0064], "Japan": [9.8, 0.028], "Jemen": [40, 0.018], "Jordanien": [3.5, 0.02], "Kaimaninseln": [4.9, null], "Kambodscha": [272, 0.0053], "Kamerun": [132, 0.014], "Kanada": [6.2, 0.011], "Kasachstan": [45, 0.33], "Katar": [37, 0.021], "Kenia": [207, 0.0068], "Kirgisistan": [128, 0.22], "Kiribati": [945, 0.011], "Kolumbien": [49, 0.052], "Komoren": [22, 0.009], "Kongo": [302, 0.028], "Kroatien": [6.6, 0.0049], "Kuba": [11, 0.031], "Kuwait": [10, 0.02], "Laos": [127, 0.0039], "Lesotho": [548, 0.029], "Lettland": [21, 0.091], "Libanon": [13, 0.011], "Liberia": [207, 0.035], "Libyen": [63, 0.01], "Litauen": [31, 0.16], "Luxemburg": [7.5, 0.015], "Madagaskar": [224, 0.0043], "Malawi": [113, 0.026], "Malaysia": [96, 0.0079], "Malediven": [40, 0.0076], "Mali": [51, 0.01], "Malta": [15, null], "Marokko": [98, 0.0071], "Marshallinseln": [411, 0.015], "Mauretanien": [65, 0.017], "Mauritius": [13, 0.01], "Mexiko": [28, 0.028], "Mikronesien": [264, 0.011], "Monaco": [0.8, null], "Mongolei": [446, 0.063], "Montenegro": [16, 0.0048], "Montserrat": [0, null], "Mosambik": [361, 0.029], "Myanmar": [482, 0.032], "Namibia": [422, 0.039], "Nauru": [161, null], "Nepal": [227, 0.035], "Neukaledonien": [18, 0.011], "Neuseeland": [7.9, 0.025], "Nicaragua": [43, 0.016], "Niederlande": [4.7, 0.028], "Niger": [86, 0.026], "Nigeria": [219, 0.014], "Niue": [55, null], "Nordmazedonien": [11, 0.01], "Norwegen": [3.3, 0.073], "Nördliche Marianen": [35, 0.024], "Oman": [11, 0.014], "Pakistan": [266, 0.019], "Palau": [28, null], "Palästinensische Gebiete": [0.3, 0.018], "Panama": [63, 0.045], "Papua-Neuguinea": [664, 0.057], "Paraguay": [81, 0.004], "Peru": [139, 0.068], "Philippinen": [625, 0.023], "Polen": [11, 0.019], "Portugal": [15, 0.0086], "Puerto Rico": [0.6, 0.025], "Republik Korea (Südkorea)": [35, 0.026], "Republik Moldau": [64, 0.28], "Ruanda": [62, 0.011], "Rumänien": [60, 0.022], "Russische Föderation": [34, 0.37], "Salomonen": [123, 0.018], "Sambia": [272, 0.016], "Samoa": [5.5, null], "San Marino": [0, null], "Saudi-Arabien": [8.4, 0.011], "Schweden": [3.3, 0.038], "Schweiz": [5.4, 0.025], "Senegal": [132, 0.016], "Serbien": [8.7, 0.012], "Seychellen": [17, null], "Sierra Leone": [372, 0.021], "Simbabwe": [203, 0.016], "Singapur": [43, 0.02], "Sint Maarten": [6.9, null], "Slowakei": [3.3, 0.027], "Slowenien": [2.6, 0.0064], "Somalia": [151, 0.041], "Spanien": [7.9, 0.016], "Sri Lanka": [59, 0.0046], "St. Kitts und Nevis": [1.1, null], "St. Lucia": [0.6, null], "St. Vincent und die Grenadinen": [4.6, null], "Sudan": [47, 0.022], "Suriname": [34, 0.1], "Syrien": [23, 0.01], "São Tomé und Príncipe": [87, 0.025], "Südafrika": [389, 0.036], "Südsudan": [320, 0.016], "Tadschikistan": [75, 0.23], "Thailand": [146, 0.017], "Timor-Leste": [496, 0.0073], "Togo": [48, 0.0047], "Tokelau": [13, null], "Tonga": [1.9, null], "Trinidad und Tobago": [27, 0.011], "Tschad": [118, 0.015], "Tschechien": [4.9, 0.049], "Tunesien": [39, 0.014], "Turkmenistan": [40, 0.35], "Turks- und Caicosinseln": [8.6, null], "Tuvalu": [223, null], "Türkei": [13, 0.023], "Uganda": [197, 0.011], "Ukraine": [86, 0.27], "Ungarn": [5.6, 0.049], "Uruguay": [47, 0.0069], "Usbekistan": [51, 0.21], "Vanuatu": [44, 0.026], "Venezuela": [46, 0.038], "Vereinigte Arabische Emirate": [0.6, 0.017], "Vereinigte Republik Tansania": [172, 0.0073], "Vereinigte Staaten von Amerika": [3.2, 0.015], "Vereinigtes Königreich": [9.7, 0.019], "Vietnam": [182, 0.042], "Wallis und Futuna": [0, null], "Zentralafrikanische Republik": [419, 0.014], "Zypern": [5.5, 0.016], "Ägypten": [10, 0.0046], "Äquatorialguinea": [199, 0.017], "Äthiopien": [141, 0.011], "Österreich": [4.9, 0.02], "Sonstiges Land (bitte ergänzen)": [0, 0]};
+
+let ZOOM=true;
+function zoom(svg,off){
+ if(!svg)return;const wrap=svg.closest('#svgwrap');
+ if(!svg._full)svg._full=svg.getAttribute('viewBox').split(' ').map(Number);
+ const F=svg._full,g=svg.querySelector('.nd.cur');let tgt=F,z=false;
+ if(!off&&ZOOM&&g&&wrap&&wrap.clientWidth>0){
+  const b=g.getBBox();
+  if(b.width){const ww=wrap.clientWidth,W=Math.min(1000,Math.max(380,ww/1.1)),H=Math.min(F[3],W*(ww>700?0.62:1.1)),cx=b.x+b.width/2,cy=b.y+b.height/2;
+   tgt=[Math.min(Math.max(cx-W/2,F[0]),F[0]+F[2]-W),Math.min(Math.max(cy-H/2,F[1]),F[1]+F[3]-H),W,H];z=true;}
+ }
+ svg.style.height=z?Math.round(wrap.clientWidth*tgt[3]/tgt[2])+'px':'';svg.style.minWidth=z?'0':'';
+ const from=(svg._vb||F).slice(),t0=performance.now(),D=window.matchMedia('(prefers-reduced-motion:reduce)').matches?0:450;
+ cancelAnimationFrame(svg._raf);
+ const step=t=>{const p=D?1:Math.min(1,(t-t0)/D),e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2,v=from.map((f,i)=>f+(tgt[i]-f)*e);
+  svg._vb=v;svg.setAttribute('viewBox',v.map(n=>n.toFixed(1)).join(' '));if(p<1)svg._raf=requestAnimationFrame(step)};
+ svg._raf=requestAnimationFrame(step);
+}
+(function(){const bt=document.getElementById('zbtn');if(bt)bt.onclick=()=>{ZOOM=!ZOOM;bt.setAttribute('aria-pressed',ZOOM);bt.textContent=ZOOM?'Zoom auf aktuellen Schritt: an':'Gesamtansicht (Zoom aus)';render()};
+ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>render(),150)})})();
+const $=id=>document.getElementById(id);
+const PR='Haus-, Betriebs- und weitere Ärzt(inn)en',RA='Radiologie',NP='Ambulante Pneumologie und Infektiologie',PD='Pädiatrie / Pädiatrische Radiologie',TZ='Gesundheitsamt (TB-Beratung)';
+for(const id of ['country','transit'])for(const c of Object.keys(data).sort((a,b)=>a.localeCompare(b,'de'))){let o=document.createElement('option');o.value=o.textContent=c;$(id).append(o)}
+const qs=[['sym','TB-verdächtige Symptome oder Befunde (Husten, Fieber, Nachtschweiß, Gewichtsverlust/Gedeihstörung, Lymphknotenschwellung)'],['contact','Infektionsrelevanter TB-Kontakt (bekannt oder anamnestisch angegeben)'],['entry','Einreise nach Deutschland'],['stay','Voraussichtlicher Aufenthalt in Deutschland länger als 3 Monate (ab 15 Jahren)'],['vuln','Tätigkeit oder Unterbringung in Bereichen mit vulnerablen Gruppen oder mit Ausbruchspotenzial (z. B. Gesundheitswesen, Pflege, Kita, Schule, Gemeinschaftsunterkunft; ab 15 Jahren)'],['cmx','Komplexe Migrationsbedingungen (lange Fluchtroute, Geflüchtete aus aktuellen Kriegs- und Krisenregionen)'],['ref','Geflüchtet (Kinder unter 15 Jahren; unter 5 Jahren immer relevant, ab 5 Jahren zusammen mit einem Risikofaktor)'],['preg','Schwangerschaft'],['risk','Zusätzlicher Risikofaktor: HIV, Immunsuppression oder Immundefekt, frühere TB, Niereninsuffizienz, schlecht eingestellter Diabetes, Mangelernährung, Alkohol- oder Drogenanamnese (optional)']];
+for(const [id,t] of qs){let l=document.createElement('label');l.htmlFor=id;l.textContent=t;let s=document.createElement('select');s.id=id;for(const [v,n] of (id==='entry'?[['','Unbekannt / nicht erhoben'],['recent','Vor höchstens 2 Jahren'],['late','Vor mehr als 2 Jahren']]:[['','Unbekannt / nicht erhoben'],['y','Ja'],['n',id==='preg'?'Nein / nicht zutreffend':'Nein']])){let o=document.createElement('option');o.value=v;o.textContent=n;s.append(o)}$('questions').append(l,s)}
+const END='Kein weiterer Schritt; über TB-Symptome und das verbleibende Erkrankungsrisiko informieren, Wiedervorstellung bei Symptomen.';
+function plan(){
+ const v=id=>$(id).value,y=id=>v(id)==='y',n=id=>v(id)==='n';
+ const a=Number(v('age')),valid=v('age')!==''&&Number.isInteger(a)&&a>=0&&a<=110;
+ const R={valid,a,preg:false,con:false,S:[],cur:null,next:'',cls:'',who:'',legal:'',aim:'',hint:''};
+ if(!valid)return R;
+ const st=(id,t,w)=>R.S.push({id,t,w,s:'done'});
+ const here=(id,t,w,next,cls)=>{R.S.push({id,t,w,s:'cur'});R.cur=id;R.who=w;R.next=next;R.cls=cls||'';return R};
+ const c=data[v('country')],t=data[v('transit')];
+ const inc=c?Math.max(c[0],t?t[0]:0):t?t[0]:null,m=c?(c[1]??null):null;
+ const high=inc!==null&&inc>100,mhigh=m!==null&&m>.1,preg=y('preg');
+ const late=v('entry')==='late',trig12=y('vuln')||y('risk'),shortStay=a>=15&&n('stay'),mdrTrig=a>=15&&!high&&mhigh&&trig12;
+ const addH=(t)=>{R.hint+=(R.hint?'<br><br>':'')+t;};
+ const ir=v('igresult'),rr=v('rxresult');
+ R.legal='<b>Empfehlung, keine gesetzliche Verpflichtung.</b> Es handelt sich nicht um eine Untersuchung nach § 36 IfSG; es gibt kein Zeugnis. Die Maßnahmen entsprechen den Empfehlungen der S3-Leitlinie TB-Risk. Sie sind ein ärztliches Angebot und setzen die Aufklärung und Einwilligung der Person voraus; die Person kann sie ablehnen. Die Leitlinie empfiehlt ein kostenfreies Angebot unabhängig vom Aufenthaltsstatus; das Ergebnis soll sich nicht auf den Aufenthaltsstatus auswirken (Empf. 23). Die Finanzierung ist vorab zu klären (Empf. 26). Information und Beratung sprach- und kultursensibel (Empf. 24, 29); Befunde zur Verwahrung mitgeben (Empf. 31).';
+ const AIM_TB='<b>TB-Screening</b> (Symptomabfrage und Röntgen-Thorax, '+(trig12?'Empf. 12, SOLL: vulnerables Umfeld oder zusätzlicher Risikofaktor':'Empf. 11, SOLLTE')+'): Ziel ist der Ausschluss einer aktiven, ggf. ansteckungsfähigen Tuberkulose.',AIM_K=' bei Kindern unter 15 Jahren und Schwangeren ist der QFT zugleich der <b>erste Schritt des TB-Screenings</b>: Ein negativer QFT macht eine aktive TB unwahrscheinlich; bei positivem QFT folgt das Röntgen zum Ausschluss einer aktiven TB (bei Kindern kein routinemäßiges Röntgen, bei Schwangeren nach ärztlicher Abwägung).',AIM_TBI=(x)=>'<b>TBI-Screening</b> (QFT'+(x||'')+'): Ziel ist die Erkennung einer latenten Infektion, damit eine präventive Therapie die spätere Erkrankung verhindern kann.';
+ if(y('risk'))R.hint+='<b>Zusätzlicher Risikofaktor (HIV, Immunsuppression, schwere Grunderkrankung oder frühere TB):</b> individuelle ärztliche Bewertung; ärztlich prüfen, ob unabhängig vom Herkunftsland ein QFT angeboten wird. Ein negativer QFT schließt eine TBI bei Immunsuppression nicht sicher aus. Bei HIV gelten für die präventive Therapie die Empfehlungen der Sk2-Leitlinie. Bei früherer TB oder radiologischen Residuen Follow-up-Screening innerhalb eines Jahres anbieten (Empf. 19).';
+ st('start','Screening ohne Indikation nach § 36 IfSG (ärztliche Empfehlung, freiwillig)',PR);
+ if(y('sym')){
+  st('anam','Anamnese und klinische Untersuchung',PR);st('sym','Typische TB-Symptome oder Befunde? → Ja',PR);
+  return a<15?here('abklk','Abklärung aktive TB, ggf. Behandlung',PD+' (Kinderkrankenhaus)','<b>TB-Verdacht: unverzüglich abklären</b> im Kinderkrankenhaus. Bei Hinweisen auf extrapulmonale TB Diagnostik organbezogen erweitern. Meldepflichten nach IfSG beachten.','urgent'):here('abkl','Abklärung aktive TB, ggf. Behandlung',NP,'<b>TB-Verdacht: unverzüglich abklären</b> (Röntgen-Thorax, mikrobiologische Diagnostik) in der ambulanten Pneumologie oder Infektiologie, bei Bedarf stationär. Bei Hinweisen auf extrapulmonale TB Diagnostik organbezogen erweitern. Meldepflichten nach IfSG beachten; das Tuberkulose-Zentrum berät.','urgent');
+ }
+ const con=y('contact');R.con=con;
+ const open=[];if(!v('sym'))open.push('Symptome');if(!v('contact'))open.push('TB-Kontakt');
+ if(open.length)return here('anam','Anamnese und klinische Untersuchung',PR,'Noch klären: '+open.join(', ')+'.');
+ st('anam','Anamnese und klinische Untersuchung',PR);st('sym','Typische TB-Symptome oder Befunde? → Nein',PR);st('contact',con?'Infektionsrelevanter TB-Kontakt? → Ja':'Infektionsrelevanter TB-Kontakt? → Nein',PR);
+ const pregNote=preg?' Schwangerschaft: Röntgen nur nach ärztlicher Abwägung (Strahlenschutz).':'';
+ // Ablauf nach QFT
+ const afterQft=(doneRx)=>{
+  if(ir==='')return here('qft','QFT-Abnahme (TBI-Screening)',PR,a<15?'<b>QFT anbieten</b> (TBI-Screening und erster Schritt des TB-Screenings, Empf. P1/P2). Bei positivem Ergebnis folgt das Röntgen in der Kinderradiologie zum Ausschluss einer aktiven TB.':'<b>QFT anbieten</b> (TBI-Screening).'+(con?' Bei Kontaktpersonen gemeinsam mit dem Tuberkulose-Zentrum vorgehen.':doneRx?' Röntgen unauffällig; empfohlen wird zusätzlich das TBI-Screening.':'')+(preg?' Schwangerschaft: QFT als Ersttest und erster Schritt des TB-Screenings, zunächst kein Röntgen.':''));
+  if(ir==='declined')return here('qft','QFT-Abnahme: nicht durchgeführt',PR,'<b>QFT abgelehnt bzw. nicht durchgeführt.</b> '+(doneRx?END:'Vorgehen ärztlich festlegen; bei Kindern und Kontaktpersonen Rücksprache mit dem Tuberkulose-Zentrum.'));
+  if(ir==='ind')return here('qft','QFT-Abnahme: Ergebnis nicht verwertbar',PR,'<b>QFT wiederholen</b> oder alternatives Testverfahren prüfen.');
+  st('qft','QFT-Abnahme (TBI-Screening)',PR);
+  if(ir==='neg'){st('qftpos','QFT positiv? → Nein',PR);return here('keinw','QFT negativ: kein weiterer Schritt',PR,'<b>QFT negativ.</b> '+END);}
+  st('qftpos','QFT positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',PR);
+  if(a<15){
+   st('u15b','Unter 15 Jahre alt? → Ja',PR);
+   if(rr==='')return here('rxk','Röntgen zum Ausschluss einer aktiven TB',PD+' (Kinderklinik oder Kinderradiologie)','<b>Röntgen-Thorax</b> zum Ausschluss einer aktiven TB veranlassen (Kinderklinik oder Kinderradiologie, Kinderradiologie).');
+   st('rxk','Röntgen zum Ausschluss einer aktiven TB',PD);
+   if(rr==='abn'){st('rxkauf','Befund auffällig? → Ja',PD);return here('abklk','Abklärung aktive TB, ggf. Behandlung',PD+' (Kinderkrankenhaus)','<b>Unverzüglich TB-Abklärung</b> im Kinderkrankenhaus, ggf. Behandlung.','urgent');}
+   st('rxkauf','Befund auffällig? → Nein',PD);
+   return here('ptk','Präventive Therapie Kinder',PD+' (Kinderklinik oder Kinder- und Jugendärzte)','<b>Aktive TB ärztlich ausgeschlossen:</b> präventive Therapie anbieten (Kinderklinik oder Kinder- und Jugendärzte; bevorzugt 3HR oder 4R, Empf. P4).');
+  }
+  st('u15b','Unter 15 Jahre alt? → Nein',PR);
+  const pt=()=>{if(mhigh)R.extra=['tzm'];return here('pt','Präventive Therapie ab 15 Jahren',NP+' oder Hausarztpraxis','<b>Aktive TB ausgeschlossen:</b> präventive Therapie anbieten (bevorzugt 4R oder 3HR, Empf. 6) in der ambulanten Pneumologie oder Infektiologie oder in der Hausarztpraxis; das Tuberkulose-Zentrum berät und stellt Handreichungen bereit.'+(mhigh?' <b>Herkunft mit MDR/RR-Rate &gt;10 %:</b> vor Therapiebeginn individuelle Nutzen-Risiko-Abwägung und Rücksprache mit dem Tuberkulose-Zentrum (Empf. 7/8).':''));};
+  const abk=()=>here('abkl','Abklärung aktive TB, ggf. Behandlung',NP,'<b>Unverzüglich TB-Abklärung</b> in der ambulanten Pneumologie oder Infektiologie, bei Bedarf stationär; Meldepflichten nach IfSG beachten.','urgent');
+  if(doneRx){st('trufalls','Röntgen-Thorax bereits erfolgt (unauffällig)',RA);st('truauf','Befund auffällig? → Nein',RA);const r=pt();return r;}
+  if(rr==='')return here('trufalls','Röntgen-Thorax, falls noch nicht erfolgt',RA,'<b>QFT positiv: Röntgen-Thorax</b> zum Ausschluss einer aktiven TB veranlassen.'+pregNote);
+  st('trufalls','Röntgen-Thorax',RA);
+  if(rr==='abn'){st('truauf','Befund auffällig? → Ja',RA);return abk();}
+  st('truauf','Befund auffällig? → Nein',RA);return pt();
+ };
+ if(con){R.aim=AIM_TBI(', bei Kontaktpersonen')+' Bei positivem QFT folgt das Röntgen zum Ausschluss einer aktiven TB.';st('tzb','Information und Abstimmung mit dem Tuberkulose-Zentrum (Umgebungsuntersuchung nach § 25 IfSG)',TZ);return afterQft(false);}
+ // Herkunft
+ const Q='Inzidenz im Herkunftsland >100/100.000 oder geflüchtetes Kind (unter 5 Jahren immer, ab 5 Jahren mit Risikofaktor)?';
+ if(inc===null)return here('orig',Q,PR,'Noch klären: Herkunftsland.');
+ const refugee=a<15&&!high,refOk=refugee&&y('ref')&&(a<5||y('risk')||y('cmx'));
+ if(refugee&&!v('ref'))return here('orig',Q,PR,'Noch klären: Geflüchtet (Kinder unter 15 Jahren).');
+ const cmxH=()=>{if(y('cmx'))addH('<b>Komplexe Migrationsbedingungen (Empf. 4, KANN):</b> Ein TBI-Screening (QFT) kann unabhängig von Alter und Inzidenz im Herkunftsland angeboten werden, soweit die Einreise noch nicht lange zurückliegt; ärztliche Abwägung.');};
+ if(!high&&!refOk&&!mdrTrig){
+  st('orig',Q+' → Nein (Inzidenz '+inc+' / 100.000'+(a>=15&&mhigh?'; MDR/RR >10 %, aber weder vulnerables Umfeld noch Risikofaktor':'')+')',PR);
+  R.aim='Kein TB- oder TBI-Screening empfohlen: Herkunftsrisiko nicht erhöht.';cmxH();
+  return here('kein','Kein Screening empfohlen',PR,'<b>Keine Empfehlung für ein TB- oder TBI-Screening nach Herkunft.</b> '+END);
+ }
+ const gate=(why,txt)=>{st('orig',Q+' → Ja ('+(high?'Inzidenz '+inc+' / 100.000':refugee?'geflüchtetes Kind':'MDR/RR >10 % bei vulnerablem Umfeld oder Risikofaktor, Empf. 12')+'), aber '+why,PR);R.aim='Kein systematisches TB- oder TBI-Screening empfohlen: '+why+'.';cmxH();return here('kein','Kein Screening empfohlen',PR,txt+' '+END);};
+ const exempt=a>=15&&trig12;
+ if(late&&!exempt)return gate('Einreise vor mehr als 2 Jahren','<b>Einreise vor mehr als 2 Jahren:</b> Die Leitlinie empfiehlt das Screening für neu Zugewanderte (TBI-Screening nach Empf. 1–3 und P1 nur bei Einreise in den letzten 2 Jahren; TB-Screening zeitnah nach Einreise, Empf. 11). Eine individuelle ärztliche Bewertung bleibt möglich.');
+ if(shortStay&&!exempt)return gate('voraussichtlicher Aufenthalt höchstens 3 Monate','<b>Aufenthalt voraussichtlich höchstens 3 Monate:</b> Empf. 11 (TB-Screening) greift nicht. Ein TBI-Screening ist dann nur nach ärztlicher Abwägung sinnvoll, weil die präventive Therapie 3 bis 4 Monate dauert (Empf. 6).');
+ st('orig',Q+' → Ja ('+(high?'Inzidenz '+inc+' / 100.000':refugee?'geflüchtetes Kind':'MDR/RR >10 % bei vulnerablem Umfeld oder Risikofaktor, Empf. 12')+')',PR);
+ if(v('entry')==='')addH('<b>Einreisezeitpunkt nicht erhoben:</b> Empf. 1–3 und P1 gelten für Einreise in den letzten 2 Jahren; bitte prüfen.');
+ if(a>=15&&v('stay')===''&&!trig12)addH('<b>Aufenthaltsdauer nicht erhoben:</b> Empf. 11 setzt einen voraussichtlichen Aufenthalt von mehr als 3 Monaten voraus; bitte prüfen.');
+ cmxH();
+ if(a<15){st('u15','Unter 15 Jahre alt? → Ja',PR);R.aim=AIM_TBI(', Empf. P1/P2')+' Zusätzlich gilt:'+AIM_K;return afterQft(false);}
+ st('u15','Unter 15 Jahre alt? → Nein',PR);
+ if(!v('preg'))return here('preg','Schwangerschaft?',PR,'Noch klären: Schwangerschaft.');
+ if(preg){R.preg=true;R.aim=AIM_TBI(' als Ersttest')+' Zusätzlich gilt:'+AIM_K;st('preg','Schwangerschaft? → Ja (QFT als Ersttest, Röntgen nur bei positivem QFT nach ärztlicher Abwägung)',PR);return afterQft(false);}
+ st('preg','Schwangerschaft? → Nein',PR);
+ R.aim=AIM_TB+(high&&!late?' Zusätzlich wird das TBI-Screening (QFT) nach Alter empfohlen (Empf. 1–3), wenn das Röntgen unauffällig ist.':' Ein TBI-Screening nach Herkunft (Empf. 1–3) ist hier nicht empfohlen.');
+ st('rxv','TB-Screening empfehlen: Röntgen-Thorax und Symptomabfrage (Empf. 11)',PR);
+ if(rr==='')return here('rx','Röntgen-Thorax-Untersuchung ab 15 Jahre',RA,'<b>TB-Screening empfehlen: Röntgen-Thorax veranlassen</b> ('+(trig12?'Empf. 12, SOLL: '+(mdrTrig?'MDR/RR-Rate &gt;10 % bei vulnerablem Umfeld oder Risikofaktor':'Herkunft aus Land mit Inzidenz &gt;100/100.000 bei vulnerablem Umfeld oder Risikofaktor'):'Empf. 11, SOLLTE: Herkunft aus Land mit Inzidenz &gt;100/100.000, Aufenthalt über 3 Monate')+'). Wenn das Röntgen nicht verfügbar ist oder abgelehnt wird, kann bei immunkompetenten, symptomfreien Personen unter 65 Jahren ohne zusätzliche Risikofaktoren der QFT initial an seine Stelle treten (Empf. 16).');
+ st('rx','Röntgen-Thorax-Untersuchung ab 15 Jahre',RA);
+ if(rr==='abn'){st('rxauf','Röntgenbefund auffällig? → Ja',RA);return here('abkl','Abklärung aktive TB, ggf. Behandlung',NP,'<b>Unverzüglich TB-Abklärung</b> in der ambulanten Pneumologie oder Infektiologie, bei Bedarf stationär; Meldepflichten nach IfSG beachten.','urgent');}
+ st('rxauf','Röntgenbefund auffällig? → Nein',RA);
+ const QQ='TBI-Screening (QFT) empfehlen nach Alter (15–35 J.: SOLL, 36–45 J.: SOLLTE, über 45 J.: KANN nur bei Inzidenz >150/100.000)?';
+ const elig=(late||!high)?null:a<=35?'SOLL (Empf. 1)':a<=45?'SOLLTE (Empf. 2)':(inc>150?'KANN (Empf. 3)':null);
+ if(!elig){st('qftq',QQ+' → Nein',PR);return here('keinq','Kein TBI-Screening empfohlen (Röntgen unauffällig)',PR,'<b>Röntgenbefund unauffällig, kein TBI-Screening empfohlen</b> ('+(late?'Einreise vor mehr als 2 Jahren, Empf. 1–3':!high?'Inzidenz im Herkunftsland ≤100/100.000':'über 45 Jahre, Inzidenz im Herkunftsland ≤150/100.000')+'). '+END);}
+ st('qftq',QQ+' → Ja ('+elig+')',PR);
+ return afterQft(true);
+}
+function render(){
+ const R=plan(),v=id=>$(id).value,a=R.a;
+ const show=(id,b)=>{$(id).hidden=!b;$(id).previousElementSibling.hidden=!b;if(!b&&(id==='ref'||id==='preg'))$(id).value='';};
+ const c0=data[v('country')],t0=data[v('transit')],inc0=c0?Math.max(c0[0],t0?t0[0]:0):t0?t0[0]:null;
+ const high0=inc0!==null&&inc0>100;
+ const origin=R.valid&&v('sym')!=='y'&&v('contact')!=='y';
+ show('country',!R.valid||origin);
+ show('transit',!R.valid||(origin&&!(c0&&c0[0]>100)));
+ show('entry',origin&&inc0!==null);
+ show('stay',origin&&a>=15&&inc0!==null);
+ show('vuln',origin&&a>=15&&inc0!==null);
+ show('cmx',origin&&inc0!==null);
+ show('ref',origin&&a<15&&inc0!==null&&!high0);
+ show('preg',origin&&a>=15&&inc0!==null&&(high0||(c0&&c0[1]>.1&&(v('vuln')==='y'||v('risk')==='y'))));
+ $('risk').hidden=!R.valid;$('risk').previousElementSibling.hidden=!R.valid;
+ const ids=new Set([...R.S.map(s=>s.id),...(R.extra||[])]);
+ $('igwrap').hidden=!(ids.has('qft'));
+ if(ids.has('rx'))$('rxwrap').after($('igwrap'));else $('rxwrap').before($('igwrap'));
+ $('rxwrap').hidden=!(ids.has('rx')||ids.has('trufalls')||ids.has('rxk'));
+ const c=data[v('country')],t=data[v('transit')],inc=c?Math.max(c[0],t?t[0]:0):t?t[0]:null,m=c?(c[1]??null):null;
+ $('epi').textContent=origin&&inc!==null?`TB-Inzidenz: ${inc} / 100.000${m===null?'':'; MDR/RR: '+(m*100).toFixed(1)+' %'}`:'';
+ const svgw=$('svgwrap');svgw.classList.toggle('hl',R.valid);
+ svgw.querySelectorAll('.e').forEach(e=>{const p=e.dataset.e.split('>'),cc=e.dataset.c;e.classList.toggle('on',R.valid&&ids.has(p[0])&&ids.has(p[1])&&(!cc||(cc==='child'?R.a<15:cc==='adult'?R.a>=15:cc==='preg'?R.preg:R.con)))});
+ svgw.querySelectorAll('.e.on').forEach(e=>e.parentNode.appendChild(e));
+ svgw.querySelectorAll('.nd').forEach(g=>{const id=g.id.slice(2);g.classList.toggle('vis',ids.has(id));g.classList.toggle('cur',R.cur===id)});zoom(document.querySelector('#svgwrap svg'));
+ if(!R.valid){$('out').innerHTML='<p>Bitte das Alter eingeben.</p>';return;}
+ const steps=R.S.map(s=>`<li class="${s.s}"><span class="who">${s.w}</span><span>${s.s==='cur'?'▶ ':'✓ '}${s.t}</span></li>`).join('');
+ $('out').innerHTML=`<div class="result"><strong>1 · Rahmen: Empfehlung</strong><p>${R.legal}</p></div>${R.aim?`<div class="result"><strong>2 · Empfohlenes Screening und Ziel</strong><p>${R.aim}</p></div>`:''}<div class="result"><strong>${R.aim?'3':'2'} · Ablauf mit Zuständigkeiten</strong><ul class="steps">${steps}</ul><a class="tolink" href="#schema">Im Prozessschema anzeigen</a></div><div class="result ${R.cls}"><strong>${R.aim?'4':'3'} · Nächster Schritt</strong><p>${R.next}</p>${R.who?`<p class="next-who">Zuständig: <b>${R.who}</b></p>`:''}</div>${R.hint?`<div class="result"><strong>Zusatzhinweis</strong><p>${R.hint}</p><p class="next-who">Zuständig: <b>${PR}</b></p></div>`:''}`;
+}
+function tab(which){for(const k of ['schema','matrix']){$('panel-'+k).hidden=k!==which;$('tab-'+k).setAttribute('aria-selected',k===which)}render()}
+$('tab-schema').onclick=()=>tab('schema');$('tab-matrix').onclick=()=>tab('matrix');
+$('f').addEventListener('input',render);$('f').addEventListener('change',render);$('reset').onclick=()=>{HTMLFormElement.prototype.reset.call($('f'));render()};render();
+</script><style>.dbar{margin:0 0 12px;font-size:14px;color:#526477}.dbar button{margin:0 0 0 6px}#datDialog{width:min(720px,calc(100% - 28px));max-height:calc(100vh - 40px);border:0;border-radius:14px;padding:0;box-shadow:0 12px 40px #0006;color:#1d2d3e}#datDialog::backdrop{background:rgba(17,31,52,.56)}#datDialog .dd-body{padding:20px 24px}#datDialog h2{margin:0 0 8px;border:0;padding:0;font-size:22px}#datDialog table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}#datDialog th,#datDialog td{border-bottom:1px solid #d8dee6;padding:5px 8px;text-align:left}#datDialog tr.chg td{background:#fff3cd;font-weight:600}#datDialog .dd-scroll{max-height:50vh;overflow:auto}#datDialog .dd-act{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}@media print{.dbar,#datDialog{display:none}}</style><dialog id="datDialog" aria-labelledby="ddTitle"><div class="dd-body"><h2 id="ddTitle">Daten aktualisieren</h2><div id="ddInfo"></div><div class="dd-scroll" id="ddList"></div><div class="dd-act"><button type="button" id="ddOk">Übernehmen</button><button type="button" id="ddCancel">Schließen</button></div></div></dialog><script>(function(){
+var U='daten.json',dlg=document.getElementById('datDialog'),info=document.getElementById('ddInfo'),list=document.getElementById('ddList'),ok=document.getElementById('ddOk'),pend=null;
+if(!dlg||!dlg.showModal)return;
+function e(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function f(a){if(!a)return'–';return (a[0]==null?'–':String(a[0]).replace('.',','))+' / '+(a[1]==null?'–':(a[1]*100).toFixed(1).replace('.',',')+' %')}
+function cl(a){return !!a&&((a[0]!=null&&a[0]>100)||(a[1]!=null&&a[1]>0.10))}
+function same(a,b){return a&&b&&a[0]===b[0]&&a[1]===b[1]}
+function opts(){['country','transit'].forEach(function(id){var s=document.getElementById(id);if(!s)return;var v=s.value,first=s.firstElementChild;while(s.children.length>1)s.removeChild(s.lastChild);Object.keys(data).sort(function(a,b){return a.localeCompare(b,'de')}).forEach(function(c){var o=document.createElement('option');o.value=o.textContent=c;s.appendChild(o)});s.value=v})}
+document.getElementById('dbtn').addEventListener('click',function(){
+ pend=null;ok.hidden=true;info.textContent='Lade aktuelle Daten …';list.innerHTML='';dlg.showModal();
+ fetch(U,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(function(j){
+  var ch=[],nw=[],k;for(k in j.data){var o=data[k],n=j.data[k];if(!o)nw.push(k);else if(!same(o,n))ch.push(k)}
+  var head='Datenstand: '+e(j.stand)+' · Quelle: '+e(j.quelle)+'. Angezeigt: Inzidenz je 100.000 / MDR-Anteil.';
+  if(!ch.length&&!nw.length){info.innerHTML=head+'<br><b>Keine Änderungen gegenüber den aktuell verwendeten Werten.</b>';document.getElementById('dstand').textContent=j.quelle+' (Stand '+j.stand+')';return}
+  var flips=ch.filter(function(c){return cl(data[c])!==cl(j.data[c])}).length;
+  info.innerHTML=head+'<br><b>'+ch.length+' Länder geändert'+(nw.length?', '+nw.length+' neu':'')+'</b>'+(flips?'; <b>bei '+flips+' ändert sich die Einstufung</b> (Röntgen-Kriterium Inzidenz &gt; 100 oder MDR &gt; 10 %).':'.')+' Vor dem Übernehmen bitte prüfen; die Übernahme gilt nur für diese Sitzung, bis die Seite neu geladen wird.';
+  var h='<table><tr><th>Land</th><th>bisher</th><th>neu</th><th>Hinweis</th></tr>';
+  ch.concat(nw).forEach(function(c){var o=data[c],n=j.data[c],fl=o&&cl(o)!==cl(n);h+='<tr'+(fl?' class="chg"':'')+'><td>'+e(c)+'</td><td>'+f(o)+'</td><td>'+f(n)+'</td><td>'+(!o?'neu':fl?(cl(n)?'jetzt im Röntgen-Screening':'nicht mehr im Röntgen-Screening'):'')+'</td></tr>'});
+  list.innerHTML=h+'</table>';pend=j;ok.hidden=false;
+ }).catch(function(){info.innerHTML='<b>Abruf nicht möglich.</b> Die Aktualisierung funktioniert nur über die veröffentlichte Seite mit Internetverbindung (nicht bei lokal geöffneter Datei).'});
+});
+ok.addEventListener('click',function(){if(!pend)return;for(var k in pend.data)data[k]=pend.data[k];opts();document.getElementById('dstand').textContent=pend.quelle+' (Stand '+pend.stand+', aktualisiert)';pend=null;dlg.close();try{render()}catch(x){}});
+document.getElementById('ddCancel').addEventListener('click',function(){dlg.close()});
+})();</script></html>
