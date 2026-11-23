@@ -6,9 +6,9 @@ Eigenständiges Projekt, parallel zur Hamburger Fassung (Repository `tb-zentrum-
 
 | Datei | Inhalt | Version | Stand |
 |---|---|---|---|
-| `index.html` | Auswahlseite | 1.3 | 23.11.2026 |
-| `ifsg36.html` | Untersuchung nach § 36 IfSG mit Wahl der Personengruppe (allgemein, Aufnahme-/Ankunftseinrichtung, UMA) | 1.4 | 23.11.2026 |
-| `praxis.html` | Freiwilliges Screening ohne Indikation nach § 36 IfSG (Haus-, Betriebs- und weitere Ärzt(inn)en) | 1.4 | 23.11.2026 |
+| `index.html` | Auswahlseite | 1.4 | 23.11.2026 |
+| `ifsg36.html` | Untersuchung nach § 36 IfSG mit Wahl der Personengruppe (allgemein, Aufnahme-/Ankunftseinrichtung, UMA) | 1.5 | 23.11.2026 |
+| `praxis.html` | Freiwilliges Screening ohne Indikation nach § 36 IfSG (Haus-, Betriebs- und weitere Ärzt(inn)en) | 1.5 | 23.11.2026 |
 
 Fachliche Arbeitsversionen, keine automatisierte Diagnose, keine rechtsverbindliche Freigabe. Änderungsverlauf jeweils in der Seite.
 

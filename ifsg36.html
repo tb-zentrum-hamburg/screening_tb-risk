@@ -19,22 +19,23 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 .nf a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 @media print{.zbar{display:none}.backlink{display:none}.nh,.nf{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
-<body><div class="nh"><div class="nh-in"><small>Entscheidungshilfe für Gesundheitsämter und ärztliche Praxen</small><strong>Tuberkulose-Screening bei Zugewanderten</strong></div></div><div class="titleband"><div class="head-inner"><a class="backlink" href="index.html">← Zurück zur Auswahl</a><div class="eyebrow">Tuberkulose-Screening · Neutrale Fassung</div><h1>TB-Screening nach § 36 IfSG</h1><p class="head-meta">Interaktive Entscheidungshilfe · Personengruppe wählbar · S3-Leitlinie TB-Risk 2025 · Version 1.4 · Stand 23.11.2026</p></div></div><main><section><h2>Risikoabfrage</h2><p id="hint-grp"></p><div class="dbar" id="dbar">Datenstand Inzidenz und MDR/RR: <span id="dstand">eingebettete Tabelle (Stand 22.11.2026)</span> <button type="button" id="dbtn">Daten aktualisieren</button></div><form id="f">
+<body><div class="nh"><div class="nh-in"><small>Entscheidungshilfe für Gesundheitsämter und ärztliche Praxen</small><strong>Tuberkulose-Screening bei Zugewanderten</strong></div></div><div class="titleband"><div class="head-inner"><a class="backlink" href="index.html">← Zurück zur Auswahl</a><div class="eyebrow">Tuberkulose-Screening · Neutrale Fassung</div><h1>TB-Screening nach § 36 IfSG</h1><p class="head-meta">Interaktive Entscheidungshilfe · Personengruppe wählbar · S3-Leitlinie TB-Risk 2025 · Version 1.5 · Stand 23.11.2026</p></div></div><main><section><h2>Risikoabfrage</h2><p id="hint-grp"></p><div class="dbar" id="dbar">Datenstand Inzidenz und MDR/RR: <span id="dstand">eingebettete Tabelle (Stand 22.11.2026)</span> <button type="button" id="dbtn">Daten aktualisieren</button></div><form id="f">
 <label for="grp">Personengruppe</label>
 <select id="grp"><option value="gen">Allgemein: Personen mit Untersuchung nach § 36 Abs. 4 IfSG (Fluchtstatus bei Kindern wird erfragt)</option><option value="arr">Geflüchtete in Aufnahme- oder Ankunftseinrichtung (alle gelten als geflüchtet)</option><option value="uma">Unbegleitete minderjährige Ausländer (UMA)</option></select>
 <label>Alter (vollendete Jahre)</label><input id="age" max="110" min="0" placeholder="0–110" required="" step="1" type="number"/>
 <label>Herkunftsland</label><select id="country"><option value="">Bitte wählen / unbekannt</option></select>
 <label>Längerer Aufenthalt in einem weiteren Land in den letzten 12 Monaten vor Einreise (optional)</label><select id="transit"><option value="">Keines / unbekannt</option></select>
 <div id="epi"></div><div id="questions"></div>
-<div hidden="" id="igwrap"><label for="igresult">QFT-Befund</label><select id="igresult"><option value="">Noch ausstehend</option><option value="pos">Positiv</option><option value="neg">Negativ</option><option value="ind">Nicht verwertbar</option><option value="declined">Abgelehnt / nicht durchgeführt</option></select></div>
+<div hidden="" id="igwrap"><label for="igresult">IGRA-Befund</label><select id="igresult"><option value="">Noch ausstehend</option><option value="pos">Positiv</option><option value="neg">Negativ</option><option value="ind">Nicht verwertbar</option><option value="declined">Abgelehnt / nicht durchgeführt</option></select></div>
 <div hidden="" id="rxwrap"><label for="rxresult">Röntgenbefund (TRU)</label><select id="rxresult"><option value="">Noch ausstehend</option><option value="normal">Unauffällig</option><option value="abn">TB-verdächtig</option></select></div>
 <button id="reset" type="button">Neue Abfrage</button><button onclick="print()" type="button">Drucken / PDF</button></form></section>
 <section><h2>Handlungsplan</h2><div aria-live="polite" id="out"></div>
 <details><summary>Allgemeine Grundlagen und Grenzen</summary>
 <p>S3 TB-Risk, AWMF 020-029, Version 1.0, September 2025: Empfehlungen 1, 4, 5, P1–P3, 11–12, 13–16, P5–P7, 17–19. <a href="https://register.awmf.org/de/leitlinien/detail/020-029">AWMF-Leitlinie</a></p>
 <p>Länderdaten: TB-Risikoabfrage, WHO-Schätzjahr 2024 laut Arbeitsmappe. Fehlende MDR-Werte werden nicht als 0 gewertet. Keine automatische Aktualisierung. Regionale Besonderheiten können die ärztliche Bewertung ändern.</p>
-<p>Die Seite bildet drei Vorgehensweisen für die Untersuchung nach § 36 Abs. 4 IfSG ab: allgemein (Fluchtstatus bei Kindern wird erfragt), Aufnahme- bzw. Ankunftseinrichtung (alle gelten als geflüchtet) und unbegleitete minderjährige Ausländer. Alle Personen erhalten das ärztliche Zeugnis nach § 36 Abs. 4 IfSG. Kinder unter 15 Jahren erhalten bei erfülltem Kriterium (Inzidenz im Herkunftsland &gt;100/100.000, geflüchtet unter 5 Jahren, geflüchtet 5–14 Jahre mit Risikofaktor; UMA: immer) einen QFT, kein Röntgen. Schwangere erhalten einen QFT als Ersttest. Bei Erwachsenen richtet sich das Röntgen nach Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %). Zuständigkeiten sind allgemein bezeichnet und an die regionalen Strukturen anzupassen. Keine rechtsverbindliche Freigabe oder ärztliche Diagnose.</p></details>
-<details><summary>Änderungsverlauf</summary><p><b>Version 1.4, Stand 23.11.2026:</b> Eigenständiges Projekt (eigenes Repository, nicht mehr Unterseite der Hamburger Fassung); Pfade der Datendatei angepasst.</p><p>
+<p>Die Seite bildet drei Vorgehensweisen für die Untersuchung nach § 36 Abs. 4 IfSG ab: allgemein (Fluchtstatus bei Kindern wird erfragt), Aufnahme- bzw. Ankunftseinrichtung (alle gelten als geflüchtet) und unbegleitete minderjährige Ausländer. Alle Personen erhalten das ärztliche Zeugnis nach § 36 Abs. 4 IfSG. Kinder unter 15 Jahren erhalten bei erfülltem Kriterium (Inzidenz im Herkunftsland &gt;100/100.000, geflüchtet unter 5 Jahren, geflüchtet 5–14 Jahre mit Risikofaktor; UMA: immer) einen IGRA, kein Röntgen. Schwangere erhalten einen IGRA als Ersttest. Bei Erwachsenen richtet sich das Röntgen nach Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %). Zuständigkeiten sind allgemein bezeichnet und an die regionalen Strukturen anzupassen. Keine rechtsverbindliche Freigabe oder ärztliche Diagnose.</p></details>
+<details><summary>Änderungsverlauf</summary><p><b>Version 1.5, Stand 23.11.2026:</b> Bezeichnung „QFT“ durch „IGRA“ ersetzt (Interferon-Gamma-Release-Assay, Oberbegriff); Hinweis auf den Tuberkulin-Hauttest (THT) als Alternative zum IGRA bei der TBI-Testung (Empf. 5/P3).</p><p>
+<b>Version 1.4, Stand 23.11.2026:</b> Eigenständiges Projekt (eigenes Repository, nicht mehr Unterseite der Hamburger Fassung); Pfade der Datendatei angepasst.</p><p>
 <b>Version 1.3, Stand 23.11.2026:</b> Knopf „Daten aktualisieren“ für Inzidenz und MDR/RR-Anteil: lädt daten.json (monatlich per GitHub-Aktion aus den WHO-Daten gepflegt), zeigt vor der Übernahme eine Änderungsliste mit Hinweis auf geänderte Einstufung.</p><p>
 <b>Version 1.2, Stand 21.11.2026:</b> Prozessschema zoomt auf den aktuellen Schritt (Schalter „Zoom auf aktuellen Schritt“, Gesamtansicht wählbar); Farbgebung Dunkelblau.</p><p><b>Version 1.1, Stand 21.11.2026:</b> Farbgebung Anthrazit statt Blau; Auswahlseite im Stil der Hamburger Auswahl (Karten mit Hover-Effekt, Vergleichstabelle).</p><p><b>Version 1.0, Stand 21.11.2026:</b> Erstfassung der neutralen Fassung ohne Länderbezug: Zusammenführung der Entscheidungshilfen für Untersuchungsstellen mit Wahl der Personengruppe (allgemein, Aufnahme-/Ankunftseinrichtung, UMA); allgemeine Bezeichnungen der Zuständigkeiten.</p></details></section>
 <section class="wide" id="schema"><h2>Prozessschema und Zuständigkeiten</h2>
@@ -110,7 +111,7 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 </g>
 <polyline class="e" data-e="u15a>qft" data-c="child" points="490,755 410,755 410,1675 515,1675" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <text x="432" y="743" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
-<text x="418" y="834" text-anchor="start" font-size="12.5"  fill="#555">QFT-Kriterium (Kinder):</text>
+<text x="418" y="834" text-anchor="start" font-size="12.5"  fill="#555">IGRA-Kriterium (Kinder):</text>
 <text x="418" y="849" text-anchor="start" font-size="12.5"  fill="#555">Inzidenz &gt;100 · gefl. &lt;5 J.</text>
 <text x="418" y="864" text-anchor="start" font-size="12.5"  fill="#555">· gefl. 5–14 J. + Risiko</text>
 <g id="n-inz" class="nd">
@@ -140,14 +141,14 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <polyline class="e" data-e="route>kein" points="750,1320 805,1320" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <text x="756" y="1308" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
 <polyline class="e" data-e="u15a>kein" data-c="child" points="730,755 1010,755 1010,1320 995,1320" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
-<text x="760" y="743" font-size="16" font-weight="700" font-style="italic" fill="#222">ja, QFT-Kriterium nicht erfüllt</text>
+<text x="760" y="743" font-size="16" font-weight="700" font-style="italic" fill="#222">ja, IGRA-Kriterium nicht erfüllt</text>
 <text x="760" y="777" font-size="12.5" fill="#555">Inzidenz ≤100/100.000 und nicht</text>
 <text x="760" y="792" font-size="12.5" fill="#555">geflüchtet bzw. 5–14 J. ohne Risiko</text>
 <g id="n-kein" class="nd">
 <rect x="805.0" y="1278.0" width="190" height="84" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
 <text x="900" y="1306.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Zeugnis nach § 36</text>
 <text x="900" y="1325.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(kein Röntgen,</text>
-<text x="900" y="1344.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">kein QFT)</text>
+<text x="900" y="1344.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">kein IGRA)</text>
 </g>
 <polyline class="e" data-e="route>opt" points="610,1400 610,1452" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <text x="622" y="1432" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
@@ -155,7 +156,7 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <rect x="535.0" y="1452.0" width="150" height="86" rx="10" fill="#fdf1ec" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5"/>
 <text x="610" y="1481.0" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Empfehlung</text>
 <text x="610" y="1500.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">TBI-Screening</text>
-<text x="610" y="1519.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(QFT)</text>
+<text x="610" y="1519.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(IGRA)</text>
 </g>
 <g id="n-qfto" class="nd">
 <polygon points="900,1415.0 1070.0,1495 900,1575.0 730.0,1495" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
@@ -170,25 +171,25 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <g id="n-keinq" class="nd">
 <rect x="805.0" y="1630.0" width="190" height="90" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
 <text x="900" y="1661.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Zeugnis nach § 36</text>
-<text x="900" y="1680.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(kein QFT, Röntgen</text>
+<text x="900" y="1680.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(kein IGRA, Röntgen</text>
 <text x="900" y="1699.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">unauffällig)</text>
 </g>
 <path class="e" data-e="opt>qft" d="M610,1538 V1640" fill="none" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#gen-arr)"/>
 <g id="n-qft" class="nd">
 <rect x="515.0" y="1640.0" width="190" height="70" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
-<text x="610" y="1680.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">QFT-Abnahme</text>
+<text x="610" y="1680.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">IGRA-Abnahme</text>
 </g>
 <polyline class="e" data-e="qft>qftpos" points="610,1710 610,1755" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <g id="n-qftpos" class="nd">
 <polygon points="610,1755.0 710.0,1810 610,1865.0 510.0,1810" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
-<text x="610" y="1815.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">QFT positiv?</text>
+<text x="610" y="1815.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">IGRA positiv?</text>
 </g>
 <polyline class="e" data-e="qftpos>keinw" points="710,1810 805,1810" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <text x="722" y="1798" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
 <g id="n-keinw" class="nd">
 <rect x="805.0" y="1770.0" width="190" height="80" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
 <text x="900" y="1805.5" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Zeugnis nach § 36</text>
-<text x="900" y="1824.5" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(QFT negativ)</text>
+<text x="900" y="1824.5" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(IGRA negativ)</text>
 </g>
 <polyline class="e" data-e="qftpos>u15b" points="610,1865 610,1910" fill="none" stroke="#555" stroke-width="2" marker-end="url(#gen-arr)"/>
 <text x="622" y="1892" font-size="16" font-weight="700" font-style="italic" fill="#222">ja</text>
@@ -379,7 +380,7 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <g id="u-n-kein" class="nd">
 <rect x="805.0" y="1128.0" width="190" height="84" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
 <text x="900" y="1156.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Kein Röntgen,</text>
-<text x="900" y="1175.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">kein QFT</text>
+<text x="900" y="1175.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">kein IGRA</text>
 <text x="900" y="1194.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(nur Anamnese)</text>
 </g>
 <polyline class="e" data-e="route>opt" points="610,1250 610,1302" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr-u)"/>
@@ -388,7 +389,7 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <rect x="535.0" y="1302.0" width="150" height="86" rx="10" fill="#fdf1ec" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5"/>
 <text x="610" y="1331.0" text-anchor="middle" font-size="16" font-weight="700" fill="#8a2c0e">Empfehlung</text>
 <text x="610" y="1350.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">TBI-Screening</text>
-<text x="610" y="1369.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(QFT)</text>
+<text x="610" y="1369.0" text-anchor="middle" font-size="13.5"  fill="#8a2c0e">(IGRA)</text>
 </g>
 <g id="u-n-qfto" class="nd">
 <polygon points="900,1265.0 1070.0,1345 900,1425.0 730.0,1345" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
@@ -402,19 +403,19 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 <text x="912" y="1458" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
 <g id="u-n-keinq" class="nd">
 <rect x="805.0" y="1480.0" width="190" height="90" rx="10" fill="#e3f0d8" stroke="#6a9f3a" stroke-width="2"/>
-<text x="900" y="1511.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Kein QFT</text>
+<text x="900" y="1511.0" text-anchor="middle" font-size="16" font-weight="700" fill="#2b4d12">Kein IGRA</text>
 <text x="900" y="1530.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">(Röntgenbefund</text>
 <text x="900" y="1549.0" text-anchor="middle" font-size="13.5"  fill="#2b4d12">unauffällig)</text>
 </g>
 <path class="e" data-e="opt>qft" d="M610,1388 V1490" fill="none" stroke="#e0693c" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#uma-arr-u)"/>
 <g id="u-n-qft" class="nd">
 <rect x="515.0" y="1490.0" width="190" height="70" rx="10" fill="#e8e1f5" stroke="#8466bd" stroke-width="2"/>
-<text x="610" y="1530.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">QFT-Abnahme</text>
+<text x="610" y="1530.0" text-anchor="middle" font-size="16" font-weight="700" fill="#3d2a6b">IGRA-Abnahme</text>
 </g>
 <polyline class="e" data-e="qft>qftpos" points="610,1560 610,1605" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr-u)"/>
 <g id="u-n-qftpos" class="nd">
 <polygon points="610,1605.0 710.0,1660 610,1715.0 510.0,1660" fill="#ddeefb" stroke="#2f7ac0" stroke-width="2.5"/>
-<text x="610" y="1665.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">QFT positiv?</text>
+<text x="610" y="1665.0" text-anchor="middle" font-size="15" font-weight="700" fill="#164a7e">IGRA positiv?</text>
 </g>
 <polyline class="e" data-e="qftpos>keinw" points="710,1660 805,1660" fill="none" stroke="#555" stroke-width="2" marker-end="url(#uma-arr-u)"/>
 <text x="722" y="1648" font-size="16" font-weight="700" font-style="italic" fill="#222">nein</text>
@@ -515,17 +516,17 @@ main>section.wide{grid-column:1/-1}.tabs{display:flex;gap:6px;margin:0 0 14px;bo
 </g>
 </svg></div></div></div>
 <div hidden="" id="panel-matrix" role="tabpanel"><div id="mx-gen"><div class="tw"><table><thead><tr><th>Stelle</th><th>Unter 15 Jahre</th><th>15 Jahre und älter</th></tr></thead><tbody>
-<tr><td><b>Untersuchende Stelle</b> (Gesundheitsamt, TB-Stelle oder beauftragte Ärztin / beauftragter Arzt)</td><td>Anamnese und klinische Untersuchung; QFT-Abnahme und Bewertung für alle Kinder; Zeugnis nach § 36 Abs. 4 IfSG.</td><td>Anamnese und klinische Untersuchung (typische TB-Symptome); TB-Kontakt; Schwangerschaft (QFT als Ersttest); Prüfung von Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %) und Risikofaktor komplexe Fluchtroute; Röntgen veranlassen; Empfehlung TBI-Screening (QFT) mit Abnahme und Bewertung bei Inzidenz &gt;100/100.000 oder komplexer Fluchtroute (Kriegs-/Krisenregion); Zeugnis nach § 36 Abs. 4 IfSG. Röntgen-Thorax-Untersuchung (TRU; vor Ort oder in beauftragter Radiologie) bei Veranlassung und bei positivem QFT, falls noch nicht erfolgt; bei Schwangeren nur nach ärztlicher Abwägung. Bei positivem QFT und fehlenden Symptomen ist bis zur TRU keine Quarantäne notwendig.</td></tr>
+<tr><td><b>Untersuchende Stelle</b> (Gesundheitsamt, TB-Stelle oder beauftragte Ärztin / beauftragter Arzt)</td><td>Anamnese und klinische Untersuchung; IGRA-Abnahme und Bewertung für alle Kinder; Zeugnis nach § 36 Abs. 4 IfSG.</td><td>Anamnese und klinische Untersuchung (typische TB-Symptome); TB-Kontakt; Schwangerschaft (IGRA als Ersttest); Prüfung von Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %) und Risikofaktor komplexe Fluchtroute; Röntgen veranlassen; Empfehlung TBI-Screening (IGRA) mit Abnahme und Bewertung bei Inzidenz &gt;100/100.000 oder komplexer Fluchtroute (Kriegs-/Krisenregion); Zeugnis nach § 36 Abs. 4 IfSG. Röntgen-Thorax-Untersuchung (TRU; vor Ort oder in beauftragter Radiologie) bei Veranlassung und bei positivem IGRA, falls noch nicht erfolgt; bei Schwangeren nur nach ärztlicher Abwägung. Bei positivem IGRA und fehlenden Symptomen ist bis zur TRU keine Quarantäne notwendig.</td></tr>
 <tr><td><b>Pneumologie (stationäre Abteilung)</b></td><td>Nicht beteiligt.</td><td>Abklärung einer aktiven TB (stationär) bei TB-verdächtigen Symptomen oder auffälligem Röntgenbefund ab 15 Jahren; alternativ in der Pädiatrie.</td></tr>
-<tr><td><b>Ambulante Pneumologie und Infektiologie</b></td><td>Nicht beteiligt.</td><td>Präventive Therapie bei positivem QFT und unauffälligem Röntgenbefund; bei Herkunft mit MDR/RR individuelle Nutzen-Risiko-Abwägung.</td></tr>
-<tr><td><b>Pädiatrie / Pädiatrische Radiologie</b> (Kinderkrankenhaus, Kinderradiologie, niedergelassene Pädiater)</td><td>Röntgen zum Ausschluss einer aktiven TB bei positivem QFT; bei fehlenden Symptomen keine Quarantäne bis zum Röntgen notwendig; Abklärung und ggf. Behandlung im Kinderkrankenhaus; präventive Therapie in der Kinderklinik oder bei niedergelassenen Pädiatern.</td><td>Nicht beteiligt.</td></tr>
+<tr><td><b>Ambulante Pneumologie und Infektiologie</b></td><td>Nicht beteiligt.</td><td>Präventive Therapie bei positivem IGRA und unauffälligem Röntgenbefund; bei Herkunft mit MDR/RR individuelle Nutzen-Risiko-Abwägung.</td></tr>
+<tr><td><b>Pädiatrie / Pädiatrische Radiologie</b> (Kinderkrankenhaus, Kinderradiologie, niedergelassene Pädiater)</td><td>Röntgen zum Ausschluss einer aktiven TB bei positivem IGRA; bei fehlenden Symptomen keine Quarantäne bis zum Röntgen notwendig; Abklärung und ggf. Behandlung im Kinderkrankenhaus; präventive Therapie in der Kinderklinik oder bei niedergelassenen Pädiatern.</td><td>Nicht beteiligt.</td></tr>
 </tbody></table></div></div><div hidden="" id="mx-uma"><div class="tw"><table><thead><tr><th>Stelle</th><th>Unter 15 Jahre</th><th>15 Jahre und älter</th></tr></thead><tbody>
-<tr><td><b>Untersuchende Stelle</b> (z. B. Gutachtendienst des Gesundheitsamts)</td><td>Anamnese und klinische Untersuchung; QFT-Abnahme und Bewertung für alle (UMA-Status gilt als Risikofaktor).</td><td>Anamnese und klinische Untersuchung (typische TB-Symptome); Prüfung von Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %) und Risikofaktor komplexe Fluchtroute; Überweisung zum Röntgen; Empfehlung TBI-Screening (QFT) mit Abnahme und Bewertung bei Inzidenz &gt;100/100.000 oder komplexer Fluchtroute (Kriegs-/Krisenregion).</td></tr>
-<tr><td><b>Röntgenstelle / Radiologie</b></td><td>Nicht beteiligt.</td><td>Röntgen-Thorax-Untersuchung (TRU), nach Überweisung und bei positivem QFT, falls noch nicht erfolgt. Bei positivem QFT und fehlenden Symptomen ist bis zur TRU keine Quarantäne notwendig.</td></tr>
+<tr><td><b>Untersuchende Stelle</b> (z. B. Gutachtendienst des Gesundheitsamts)</td><td>Anamnese und klinische Untersuchung; IGRA-Abnahme und Bewertung für alle (UMA-Status gilt als Risikofaktor).</td><td>Anamnese und klinische Untersuchung (typische TB-Symptome); Prüfung von Inzidenz im Herkunftsland (&gt;100/100.000) oder MDR/RR-Rate (&gt;10 %) und Risikofaktor komplexe Fluchtroute; Überweisung zum Röntgen; Empfehlung TBI-Screening (IGRA) mit Abnahme und Bewertung bei Inzidenz &gt;100/100.000 oder komplexer Fluchtroute (Kriegs-/Krisenregion).</td></tr>
+<tr><td><b>Röntgenstelle / Radiologie</b></td><td>Nicht beteiligt.</td><td>Röntgen-Thorax-Untersuchung (TRU), nach Überweisung und bei positivem IGRA, falls noch nicht erfolgt. Bei positivem IGRA und fehlenden Symptomen ist bis zur TRU keine Quarantäne notwendig.</td></tr>
 <tr><td><b>Pneumologie (stationäre Abteilung)</b></td><td>Nicht beteiligt.</td><td>Abklärung einer aktiven TB (stationär) bei TB-verdächtigen Symptomen oder auffälligem Röntgenbefund ab 15 Jahren; alternativ in der Pädiatrie.</td></tr>
-<tr><td><b>Ambulante Pneumologie und Infektiologie</b></td><td>Nicht beteiligt.</td><td>Präventive Therapie bei positivem QFT und unauffälligem Röntgenbefund; bei Herkunft mit MDR/RR individuelle Nutzen-Risiko-Abwägung.</td></tr>
-<tr><td><b>Pädiatrie / Pädiatrische Radiologie</b> (Kinderkrankenhaus, Kinderradiologie, niedergelassene Pädiater)</td><td>Röntgen zum Ausschluss einer aktiven TB bei positivem QFT (Kinderklinik oder Kinderradiologie); bei fehlenden Symptomen keine Quarantäne bis zum Röntgen notwendig; Abklärung und ggf. Behandlung im Kinderkrankenhaus; präventive Therapie in der Kinderklinik oder bei niedergelassenen Pädiatern.</td><td>Nicht beteiligt.</td></tr>
-</tbody></table></div></div></div></section></main><footer class="nf" id="kontakt"><div class="nf-in"><div><a href="index.html">Zurück zur Auswahl</a> · <a href="https://register.awmf.org/de/leitlinien/detail/020-029" rel="noopener noreferrer" target="_blank">S3-Leitlinie TB-Risk (AWMF 020-029)</a></div><p style="margin:8px 0 0">Version 1.4 · Stand 23.11.2026 · Neutrale Fassung ohne Länderbezug · Fachliche Arbeitsversion, keine automatisierte Diagnose und keine rechtsverbindliche Freigabe. Landesrechtliche Vorgaben, Zuständigkeiten und regionale Versorgungsstrukturen sind ergänzend zu beachten.</p></div></footer><script>const data={"Afghanistan": [203, 0.016], "Albanien": [15, 0.013], "Algerien": [54, 0.018], "Amerikanisch-Samoa": [3.7, null], "Andorra": [4.9, null], "Angola": [373, 0.018], "Anguilla": [0, null], "Antigua und Barbuda": [1.1, null], "Argentinien": [44, 0.016], "Armenien": [19, 0.17], "Aruba": [8.3, null], "Aserbaidschan": [64, 0.12], "Australien": [6.9, 0.023], "Bahamas": [18, 0.032], "Bahrain": [12, 0.019], "Bangladesch": [221, 0.0049], "Barbados": [1, null], "Belarus": [17, 0.39], "Belgien": [2.7, 0.016], "Belize": [34, 0.011], "Benin": [40, 0.0077], "Bermuda": [3.1, null], "Bhutan": [191, 0.12], "Bolivien": [114, 0.015], "Bosnien und Herzegowina": [21, 0.0022], "Botswana": [143, 0.033], "Brasilien": [49, 0.013], "Britische Jungferninseln": [0, null], "Brunei Darussalam": [65, 0.0034], "Bulgarien": [12, 0.019], "Burkina Faso": [57, 0.017], "Burundi": [83, 0.015], "Cabo Verde": [47, 0.0094], "Chile": [19, 0.022], "China": [49, 0.029], "China, Sonderverwaltungszone Hongkong": [66, 0.0092], "China, Sonderverwaltungszone Macau": [59, 0.023], "Cookinseln": [7.3, null], "Costa Rica": [9.3, 0.0089], "Curaçao": [2.8, null], "Demokratische Republik Kongo": [377, 0.014], "Deutschland": [5.4, 0.022], "Dominica": [4.5, null], "Dominikanische Republik": [51, 0.052], "Dschibuti": [495, 0.03], "Dänemark": [3.2, 0.025], "Ecuador": [66, 0.045], "El Salvador": [116, 0.018], "Elfenbeinküste": [99, 0.024], "Eritrea": [115, 0.022], "Estland": [8.2, 0.22], "Eswatini": [319, 0.032], "Fidschi": [104, 0.013], "Finnland": [3.7, 0.043], "Frankreich": [7.8, 0.0064], "Französisch-Polynesien": [24, 0.085], "Gabun": [371, 0.034], "Gambia": [138, 0.0076], "Georgien": [45, 0.097], "Ghana": [126, 0.015], "Grenada": [1.7, null], "Griechenland": [3.6, 0.019], "Grönland": [139, 0.025], "Guam": [55, 0.022], "Guatemala": [28, 0.018], "Guinea": [178, 0.035], "Guinea-Bissau": [176, 0.016], "Guyana": [67, 0.022], "Haiti": [175, 0.032], "Honduras": [38, 0.021], "Indien": [187, 0.036], "Indonesien": [382, 0.018], "Irak": [21, 0.024], "Iran": [10, 0.018], "Irland": [6.2, 0.034], "Island": [3, null], "Israel": [2.4, 0.089], "Italien": [5, 0.028], "Jamaika": [2.3, 0.0064], "Japan": [9.8, 0.028], "Jemen": [40, 0.018], "Jordanien": [3.5, 0.02], "Kaimaninseln": [4.9, null], "Kambodscha": [272, 0.0053], "Kamerun": [132, 0.014], "Kanada": [6.2, 0.011], "Kasachstan": [45, 0.33], "Katar": [37, 0.021], "Kenia": [207, 0.0068], "Kirgisistan": [128, 0.22], "Kiribati": [945, 0.011], "Kolumbien": [49, 0.052], "Komoren": [22, 0.009], "Kongo": [302, 0.028], "Kroatien": [6.6, 0.0049], "Kuba": [11, 0.031], "Kuwait": [10, 0.02], "Laos": [127, 0.0039], "Lesotho": [548, 0.029], "Lettland": [21, 0.091], "Libanon": [13, 0.011], "Liberia": [207, 0.035], "Libyen": [63, 0.01], "Litauen": [31, 0.16], "Luxemburg": [7.5, 0.015], "Madagaskar": [224, 0.0043], "Malawi": [113, 0.026], "Malaysia": [96, 0.0079], "Malediven": [40, 0.0076], "Mali": [51, 0.01], "Malta": [15, null], "Marokko": [98, 0.0071], "Marshallinseln": [411, 0.015], "Mauretanien": [65, 0.017], "Mauritius": [13, 0.01], "Mexiko": [28, 0.028], "Mikronesien": [264, 0.011], "Monaco": [0.8, null], "Mongolei": [446, 0.063], "Montenegro": [16, 0.0048], "Montserrat": [0, null], "Mosambik": [361, 0.029], "Myanmar": [482, 0.032], "Namibia": [422, 0.039], "Nauru": [161, null], "Nepal": [227, 0.035], "Neukaledonien": [18, 0.011], "Neuseeland": [7.9, 0.025], "Nicaragua": [43, 0.016], "Niederlande": [4.7, 0.028], "Niger": [86, 0.026], "Nigeria": [219, 0.014], "Niue": [55, null], "Nordmazedonien": [11, 0.01], "Norwegen": [3.3, 0.073], "Nördliche Marianen": [35, 0.024], "Oman": [11, 0.014], "Pakistan": [266, 0.019], "Palau": [28, null], "Palästinensische Gebiete": [0.3, 0.018], "Panama": [63, 0.045], "Papua-Neuguinea": [664, 0.057], "Paraguay": [81, 0.004], "Peru": [139, 0.068], "Philippinen": [625, 0.023], "Polen": [11, 0.019], "Portugal": [15, 0.0086], "Puerto Rico": [0.6, 0.025], "Republik Korea (Südkorea)": [35, 0.026], "Republik Moldau": [64, 0.28], "Ruanda": [62, 0.011], "Rumänien": [60, 0.022], "Russische Föderation": [34, 0.37], "Salomonen": [123, 0.018], "Sambia": [272, 0.016], "Samoa": [5.5, null], "San Marino": [0, null], "Saudi-Arabien": [8.4, 0.011], "Schweden": [3.3, 0.038], "Schweiz": [5.4, 0.025], "Senegal": [132, 0.016], "Serbien": [8.7, 0.012], "Seychellen": [17, null], "Sierra Leone": [372, 0.021], "Simbabwe": [203, 0.016], "Singapur": [43, 0.02], "Sint Maarten": [6.9, null], "Slowakei": [3.3, 0.027], "Slowenien": [2.6, 0.0064], "Somalia": [151, 0.041], "Spanien": [7.9, 0.016], "Sri Lanka": [59, 0.0046], "St. Kitts und Nevis": [1.1, null], "St. Lucia": [0.6, null], "St. Vincent und die Grenadinen": [4.6, null], "Sudan": [47, 0.022], "Suriname": [34, 0.1], "Syrien": [23, 0.01], "São Tomé und Príncipe": [87, 0.025], "Südafrika": [389, 0.036], "Südsudan": [320, 0.016], "Tadschikistan": [75, 0.23], "Thailand": [146, 0.017], "Timor-Leste": [496, 0.0073], "Togo": [48, 0.0047], "Tokelau": [13, null], "Tonga": [1.9, null], "Trinidad und Tobago": [27, 0.011], "Tschad": [118, 0.015], "Tschechien": [4.9, 0.049], "Tunesien": [39, 0.014], "Turkmenistan": [40, 0.35], "Turks- und Caicosinseln": [8.6, null], "Tuvalu": [223, null], "Türkei": [13, 0.023], "Uganda": [197, 0.011], "Ukraine": [86, 0.27], "Ungarn": [5.6, 0.049], "Uruguay": [47, 0.0069], "Usbekistan": [51, 0.21], "Vanuatu": [44, 0.026], "Venezuela": [46, 0.038], "Vereinigte Arabische Emirate": [0.6, 0.017], "Vereinigte Republik Tansania": [172, 0.0073], "Vereinigte Staaten von Amerika": [3.2, 0.015], "Vereinigtes Königreich": [9.7, 0.019], "Vietnam": [182, 0.042], "Wallis und Futuna": [0, null], "Zentralafrikanische Republik": [419, 0.014], "Zypern": [5.5, 0.016], "Ägypten": [10, 0.0046], "Äquatorialguinea": [199, 0.017], "Äthiopien": [141, 0.011], "Österreich": [4.9, 0.02], "Sonstiges Land (bitte ergänzen)": [0, 0]};
+<tr><td><b>Ambulante Pneumologie und Infektiologie</b></td><td>Nicht beteiligt.</td><td>Präventive Therapie bei positivem IGRA und unauffälligem Röntgenbefund; bei Herkunft mit MDR/RR individuelle Nutzen-Risiko-Abwägung.</td></tr>
+<tr><td><b>Pädiatrie / Pädiatrische Radiologie</b> (Kinderkrankenhaus, Kinderradiologie, niedergelassene Pädiater)</td><td>Röntgen zum Ausschluss einer aktiven TB bei positivem IGRA (Kinderklinik oder Kinderradiologie); bei fehlenden Symptomen keine Quarantäne bis zum Röntgen notwendig; Abklärung und ggf. Behandlung im Kinderkrankenhaus; präventive Therapie in der Kinderklinik oder bei niedergelassenen Pädiatern.</td><td>Nicht beteiligt.</td></tr>
+</tbody></table></div></div></div></section></main><footer class="nf" id="kontakt"><div class="nf-in"><div><a href="index.html">Zurück zur Auswahl</a> · <a href="https://register.awmf.org/de/leitlinien/detail/020-029" rel="noopener noreferrer" target="_blank">S3-Leitlinie TB-Risk (AWMF 020-029)</a></div><p style="margin:8px 0 0">Version 1.5 · Stand 23.11.2026 · Neutrale Fassung ohne Länderbezug · Fachliche Arbeitsversion, keine automatisierte Diagnose und keine rechtsverbindliche Freigabe. Landesrechtliche Vorgaben, Zuständigkeiten und regionale Versorgungsstrukturen sind ergänzend zu beachten.</p></div></footer><script>const data={"Afghanistan": [203, 0.016], "Albanien": [15, 0.013], "Algerien": [54, 0.018], "Amerikanisch-Samoa": [3.7, null], "Andorra": [4.9, null], "Angola": [373, 0.018], "Anguilla": [0, null], "Antigua und Barbuda": [1.1, null], "Argentinien": [44, 0.016], "Armenien": [19, 0.17], "Aruba": [8.3, null], "Aserbaidschan": [64, 0.12], "Australien": [6.9, 0.023], "Bahamas": [18, 0.032], "Bahrain": [12, 0.019], "Bangladesch": [221, 0.0049], "Barbados": [1, null], "Belarus": [17, 0.39], "Belgien": [2.7, 0.016], "Belize": [34, 0.011], "Benin": [40, 0.0077], "Bermuda": [3.1, null], "Bhutan": [191, 0.12], "Bolivien": [114, 0.015], "Bosnien und Herzegowina": [21, 0.0022], "Botswana": [143, 0.033], "Brasilien": [49, 0.013], "Britische Jungferninseln": [0, null], "Brunei Darussalam": [65, 0.0034], "Bulgarien": [12, 0.019], "Burkina Faso": [57, 0.017], "Burundi": [83, 0.015], "Cabo Verde": [47, 0.0094], "Chile": [19, 0.022], "China": [49, 0.029], "China, Sonderverwaltungszone Hongkong": [66, 0.0092], "China, Sonderverwaltungszone Macau": [59, 0.023], "Cookinseln": [7.3, null], "Costa Rica": [9.3, 0.0089], "Curaçao": [2.8, null], "Demokratische Republik Kongo": [377, 0.014], "Deutschland": [5.4, 0.022], "Dominica": [4.5, null], "Dominikanische Republik": [51, 0.052], "Dschibuti": [495, 0.03], "Dänemark": [3.2, 0.025], "Ecuador": [66, 0.045], "El Salvador": [116, 0.018], "Elfenbeinküste": [99, 0.024], "Eritrea": [115, 0.022], "Estland": [8.2, 0.22], "Eswatini": [319, 0.032], "Fidschi": [104, 0.013], "Finnland": [3.7, 0.043], "Frankreich": [7.8, 0.0064], "Französisch-Polynesien": [24, 0.085], "Gabun": [371, 0.034], "Gambia": [138, 0.0076], "Georgien": [45, 0.097], "Ghana": [126, 0.015], "Grenada": [1.7, null], "Griechenland": [3.6, 0.019], "Grönland": [139, 0.025], "Guam": [55, 0.022], "Guatemala": [28, 0.018], "Guinea": [178, 0.035], "Guinea-Bissau": [176, 0.016], "Guyana": [67, 0.022], "Haiti": [175, 0.032], "Honduras": [38, 0.021], "Indien": [187, 0.036], "Indonesien": [382, 0.018], "Irak": [21, 0.024], "Iran": [10, 0.018], "Irland": [6.2, 0.034], "Island": [3, null], "Israel": [2.4, 0.089], "Italien": [5, 0.028], "Jamaika": [2.3, 0.0064], "Japan": [9.8, 0.028], "Jemen": [40, 0.018], "Jordanien": [3.5, 0.02], "Kaimaninseln": [4.9, null], "Kambodscha": [272, 0.0053], "Kamerun": [132, 0.014], "Kanada": [6.2, 0.011], "Kasachstan": [45, 0.33], "Katar": [37, 0.021], "Kenia": [207, 0.0068], "Kirgisistan": [128, 0.22], "Kiribati": [945, 0.011], "Kolumbien": [49, 0.052], "Komoren": [22, 0.009], "Kongo": [302, 0.028], "Kroatien": [6.6, 0.0049], "Kuba": [11, 0.031], "Kuwait": [10, 0.02], "Laos": [127, 0.0039], "Lesotho": [548, 0.029], "Lettland": [21, 0.091], "Libanon": [13, 0.011], "Liberia": [207, 0.035], "Libyen": [63, 0.01], "Litauen": [31, 0.16], "Luxemburg": [7.5, 0.015], "Madagaskar": [224, 0.0043], "Malawi": [113, 0.026], "Malaysia": [96, 0.0079], "Malediven": [40, 0.0076], "Mali": [51, 0.01], "Malta": [15, null], "Marokko": [98, 0.0071], "Marshallinseln": [411, 0.015], "Mauretanien": [65, 0.017], "Mauritius": [13, 0.01], "Mexiko": [28, 0.028], "Mikronesien": [264, 0.011], "Monaco": [0.8, null], "Mongolei": [446, 0.063], "Montenegro": [16, 0.0048], "Montserrat": [0, null], "Mosambik": [361, 0.029], "Myanmar": [482, 0.032], "Namibia": [422, 0.039], "Nauru": [161, null], "Nepal": [227, 0.035], "Neukaledonien": [18, 0.011], "Neuseeland": [7.9, 0.025], "Nicaragua": [43, 0.016], "Niederlande": [4.7, 0.028], "Niger": [86, 0.026], "Nigeria": [219, 0.014], "Niue": [55, null], "Nordmazedonien": [11, 0.01], "Norwegen": [3.3, 0.073], "Nördliche Marianen": [35, 0.024], "Oman": [11, 0.014], "Pakistan": [266, 0.019], "Palau": [28, null], "Palästinensische Gebiete": [0.3, 0.018], "Panama": [63, 0.045], "Papua-Neuguinea": [664, 0.057], "Paraguay": [81, 0.004], "Peru": [139, 0.068], "Philippinen": [625, 0.023], "Polen": [11, 0.019], "Portugal": [15, 0.0086], "Puerto Rico": [0.6, 0.025], "Republik Korea (Südkorea)": [35, 0.026], "Republik Moldau": [64, 0.28], "Ruanda": [62, 0.011], "Rumänien": [60, 0.022], "Russische Föderation": [34, 0.37], "Salomonen": [123, 0.018], "Sambia": [272, 0.016], "Samoa": [5.5, null], "San Marino": [0, null], "Saudi-Arabien": [8.4, 0.011], "Schweden": [3.3, 0.038], "Schweiz": [5.4, 0.025], "Senegal": [132, 0.016], "Serbien": [8.7, 0.012], "Seychellen": [17, null], "Sierra Leone": [372, 0.021], "Simbabwe": [203, 0.016], "Singapur": [43, 0.02], "Sint Maarten": [6.9, null], "Slowakei": [3.3, 0.027], "Slowenien": [2.6, 0.0064], "Somalia": [151, 0.041], "Spanien": [7.9, 0.016], "Sri Lanka": [59, 0.0046], "St. Kitts und Nevis": [1.1, null], "St. Lucia": [0.6, null], "St. Vincent und die Grenadinen": [4.6, null], "Sudan": [47, 0.022], "Suriname": [34, 0.1], "Syrien": [23, 0.01], "São Tomé und Príncipe": [87, 0.025], "Südafrika": [389, 0.036], "Südsudan": [320, 0.016], "Tadschikistan": [75, 0.23], "Thailand": [146, 0.017], "Timor-Leste": [496, 0.0073], "Togo": [48, 0.0047], "Tokelau": [13, null], "Tonga": [1.9, null], "Trinidad und Tobago": [27, 0.011], "Tschad": [118, 0.015], "Tschechien": [4.9, 0.049], "Tunesien": [39, 0.014], "Turkmenistan": [40, 0.35], "Turks- und Caicosinseln": [8.6, null], "Tuvalu": [223, null], "Türkei": [13, 0.023], "Uganda": [197, 0.011], "Ukraine": [86, 0.27], "Ungarn": [5.6, 0.049], "Uruguay": [47, 0.0069], "Usbekistan": [51, 0.21], "Vanuatu": [44, 0.026], "Venezuela": [46, 0.038], "Vereinigte Arabische Emirate": [0.6, 0.017], "Vereinigte Republik Tansania": [172, 0.0073], "Vereinigte Staaten von Amerika": [3.2, 0.015], "Vereinigtes Königreich": [9.7, 0.019], "Vietnam": [182, 0.042], "Wallis und Futuna": [0, null], "Zentralafrikanische Republik": [419, 0.014], "Zypern": [5.5, 0.016], "Ägypten": [10, 0.0046], "Äquatorialguinea": [199, 0.017], "Äthiopien": [141, 0.011], "Österreich": [4.9, 0.02], "Sonstiges Land (bitte ergänzen)": [0, 0]};
 
 let ZOOM=true;
 function zoom(svg,off){
@@ -564,9 +565,9 @@ function planGen(){
  const inc=c?Math.max(c[0],t?t[0]:0):t?t[0]:null,m=c?(c[1]??null):null;
  const high=inc!==null&&inc>100,mhigh=m!==null&&m>.1,preg=y('preg');
  const ir=v('igresult'),rr=v('rxresult');
- if(y('risk'))R.hint='<b>Zusätzlicher Risikofaktor (HIV, Immunsuppression, schwere Grunderkrankung oder frühere TB):</b> individuelle ärztliche Bewertung bei der Untersuchung; ärztlich prüfen, ob unabhängig vom Herkunftsland ein QFT angeboten wird. Ein negativer QFT schließt eine TBI bei Immunsuppression nicht sicher aus. Bei HIV gelten für die präventive Therapie die Empfehlungen der Sk2-Leitlinie. Bei früherer TB oder radiologischen Residuen Follow-up-Screening innerhalb eines Jahres anbieten (Empf. 19).';
+ if(y('risk'))R.hint='<b>Zusätzlicher Risikofaktor (HIV, Immunsuppression, schwere Grunderkrankung oder frühere TB):</b> individuelle ärztliche Bewertung bei der Untersuchung; ärztlich prüfen, ob unabhängig vom Herkunftsland ein IGRA angeboten wird. Ein negativer IGRA schließt eine TBI bei Immunsuppression nicht sicher aus. Bei HIV gelten für die präventive Therapie die Empfehlungen der Sk2-Leitlinie. Bei früherer TB oder radiologischen Residuen Follow-up-Screening innerhalb eines Jahres anbieten (Empf. 19).';
  R.preg=preg;
- R.legal=a<15?'Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG. Bei Kindern unter 15 Jahren kein Röntgen-Thorax; Grundlage sind Untersuchung und QFT. Das Vorgehen mit QFT und ggf. Röntgen ist das hier vorgesehene medizinische Vorgehen, nicht der gesetzlich festgelegte Wortlaut.':(preg?"Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG. Bei Schwangeren ist von der Röntgenaufnahme zunächst abzusehen; Grundlage ist der QFT als Ersttest.":'Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG über fehlende Anhaltspunkte für ansteckungsfähige Lungentuberkulose.');
+ R.legal=a<15?'Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG. Bei Kindern unter 15 Jahren kein Röntgen-Thorax; Grundlage sind Untersuchung und IGRA. Das Vorgehen mit IGRA und ggf. Röntgen ist das hier vorgesehene medizinische Vorgehen, nicht der gesetzlich festgelegte Wortlaut.':(preg?"Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG. Bei Schwangeren ist von der Röntgenaufnahme zunächst abzusehen; Grundlage ist der IGRA als Ersttest.":'Alle Personen erhalten ein ärztliches Zeugnis nach § 36 Abs. 4 IfSG über fehlende Anhaltspunkte für ansteckungsfähige Lungentuberkulose.');
  st('start','Gesundheitsuntersuchung nach § 36 Abs. 4 IfSG',G);
  if(y('sym')){
   st('anam','Anamnese und klinische Untersuchung',G);st('sym','Typische TB-Symptome oder Befunde? → Ja',G);
@@ -578,18 +579,18 @@ function planGen(){
  st('anam','Anamnese und klinische Untersuchung',G);st('sym','Typische TB-Symptome oder Befunde? → Nein',G);st('contact',con?'Infektionsrelevanter TB-Kontakt? → Ja':'Infektionsrelevanter TB-Kontakt? → Nein',G);R.con=con;
  const pregNote=preg?' Schwangerschaft: Röntgen nur nach ärztlicher Abwägung (Strahlenschutz); Befundgrundlage ärztlich festlegen.':'';
  const optStage=(doneTRU,skipOpt)=>{
-  if(skipOpt&&ir==='')return here('qft','QFT-Abnahme',G,preg&&!con?'<b>QFT abnehmen</b> (Schwangerschaft: QFT als Ersttest, zunächst kein Röntgen).':'<b>QFT abnehmen</b> (infektionsrelevanter TB-Kontakt).'+(preg?' Schwangerschaft: zunächst kein Röntgen.':''));
-  if(!skipOpt&&ir==='')return here('opt','Empfehlung TBI-Screening (QFT)',G,(doneTRU?'<b>Röntgenbefund unauffällig.</b> ':'')+'<b>Empfehlung TBI-Screening (QFT):</b> QFT abnehmen.'+(doneTRU?'':' Kein initiales Röntgen.'));
-  if(!skipOpt)st('opt','Empfehlung TBI-Screening (QFT)',G);
-  if(ir==='declined'){R.next='QFT abgelehnt bzw. nicht durchgeführt. '+ENDG;R.who=G;return R;}
-  if(ir==='ind')return here('qft','QFT-Abnahme: Ergebnis nicht verwertbar',G,'<b>QFT wiederholen</b> oder alternatives Testverfahren prüfen.');
-  st('qft','QFT-Abnahme',G);
-  if(ir==='neg'){st('qftpos','QFT positiv? → Nein',G);return here('keinw','Zeugnis nach § 36 Abs. 4 IfSG (QFT negativ)',G,'<b>QFT negativ.</b> '+ENDG);}
-  st('qftpos','QFT positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Nein',G);
+  if(skipOpt&&ir==='')return here('qft','IGRA-Abnahme',G,preg&&!con?'<b>IGRA abnehmen</b> (Schwangerschaft: IGRA als Ersttest, zunächst kein Röntgen).':'<b>IGRA abnehmen</b> (infektionsrelevanter TB-Kontakt).'+(preg?' Schwangerschaft: zunächst kein Röntgen.':''));
+  if(!skipOpt&&ir==='')return here('opt','Empfehlung TBI-Screening (IGRA)',G,(doneTRU?'<b>Röntgenbefund unauffällig.</b> ':'')+'<b>Empfehlung TBI-Screening (IGRA):</b> IGRA abnehmen (bevorzugt; alternativ Tuberkulin-Hauttest, THT, Empf. 5/P3).'+(doneTRU?'':' Kein initiales Röntgen.'));
+  if(!skipOpt)st('opt','Empfehlung TBI-Screening (IGRA)',G);
+  if(ir==='declined'){R.next='IGRA abgelehnt bzw. nicht durchgeführt. '+ENDG;R.who=G;return R;}
+  if(ir==='ind')return here('qft','IGRA-Abnahme: Ergebnis nicht verwertbar',G,'<b>IGRA wiederholen</b> oder alternatives Testverfahren, z. B. Tuberkulin-Hauttest (THT), prüfen.');
+  st('qft','IGRA-Abnahme',G);
+  if(ir==='neg'){st('qftpos','IGRA positiv? → Nein',G);return here('keinw','Zeugnis nach § 36 Abs. 4 IfSG (IGRA negativ)',G,'<b>IGRA negativ.</b> '+ENDG);}
+  st('qftpos','IGRA positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Nein',G);
   const pt=()=>here('pt15','Präventive Therapie ab 15 Jahren',NP,'<b>Aktive TB ausgeschlossen:</b> Zeugnis nach § 36 Abs. 4 IfSG ausstellen; präventive Therapie bei niedergelassenen Lungenfachärzt(inn)en oder Infektiolog(inn)en (bevorzugt 4R oder 3HR, Empf. 6).'+(mhigh?' Bei MDR/RR-Herkunft individuelle Nutzen-Risiko-Abwägung.':''));
   const ab=()=>here('abkl','Abklärung aktive TB, ggf. Behandlung',PN,'<b>Unverzüglich TB-Abklärung</b> stationär in einer pneumologischen Abteilung oder in der Pädiatrie, ggf. Behandlung. Zeugnis erst nach Bewertung der Befunde ausstellen.','urgent');
   if(doneTRU){st('trufalls','TRU bereits erfolgt (unauffällig)',TZ);st('truauf','TRU-Befund auffällig? → Nein',TZ);return pt();}
-  if(rr==='')return here('trufalls','Röntgen-Thorax-Untersuchung (TRU), falls noch nicht erfolgt',TZ,'<b>QFT positiv: Röntgen-Thorax-Untersuchung (TRU)</b> in der Röntgenstelle (vor Ort oder in beauftragter Radiologie) zum Ausschluss einer aktiven TB.'+pregNote);
+  if(rr==='')return here('trufalls','Röntgen-Thorax-Untersuchung (TRU), falls noch nicht erfolgt',TZ,'<b>IGRA positiv: Röntgen-Thorax-Untersuchung (TRU)</b> in der Röntgenstelle (vor Ort oder in beauftragter Radiologie) zum Ausschluss einer aktiven TB.'+pregNote);
   st('trufalls','Röntgen-Thorax-Untersuchung (TRU)',TZ);
   if(rr==='abn'){st('truauf','TRU-Befund auffällig? → Ja',TZ);return ab();}
   st('truauf','TRU-Befund auffällig? → Nein',TZ);return pt();
@@ -606,16 +607,16 @@ function planGen(){
    else if(inc===null)return here('u15a','Unter 15 Jahre alt?',G,'Noch klären: Herkunftsland.');
    else{
     st('u15a','Unter 15 Jahre alt? → Ja',G);
-    return here('kein','Zeugnis nach § 36 Abs. 4 IfSG (kein Röntgen, kein QFT)',G,'<b>Kein QFT empfohlen:</b> '+(REF?'geflüchtetes Kind ab 5 Jahren ohne Risikofaktor und Herkunft aus Land mit Inzidenz ≤100/100.000 (Empf. P1/P2).':'kein geflüchtetes Kind und Herkunft aus Land mit Inzidenz ≤100/100.000 (Empf. P1/P2).')+' Ärztliche Untersuchung bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');
+    return here('kein','Zeugnis nach § 36 Abs. 4 IfSG (kein Röntgen, kein IGRA)',G,'<b>Kein IGRA empfohlen:</b> '+(REF?'geflüchtetes Kind ab 5 Jahren ohne Risikofaktor und Herkunft aus Land mit Inzidenz ≤100/100.000 (Empf. P1/P2).':'kein geflüchtetes Kind und Herkunft aus Land mit Inzidenz ≤100/100.000 (Empf. P1/P2).')+' Ärztliche Untersuchung bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');
    }
    st('u15a','Unter 15 Jahre alt? → Ja ('+cb+')',G);
   }
-  if(ir==='')return here('qft','QFT-Abnahme',G,'<b>QFT abnehmen</b>'+(cb?' ('+cb+')':'')+'. Bei Kindern ist der QFT die Screeningmethode nach § 36 IfSG. Bei negativem Ergebnis und unauffälliger ärztlicher Untersuchung Zeugnis erstellen; bei positivem QFT folgt das Röntgen in der Pädiatrie.');
-  if(ir==='ind')return here('qft','QFT-Abnahme: Ergebnis nicht verwertbar',G,'<b>QFT wiederholen</b> oder alternatives Testverfahren prüfen. Zeugnis erst nach ärztlicher Bewertung der verfügbaren Befunde erstellen.');
-  if(ir==='declined')return here('qft','QFT-Abnahme: nicht durchgeführt',G,'<b>QFT nicht durchgeführt.</b> Vorgehen ärztlich festlegen; Zeugnis erst nach Bewertung der verfügbaren Befunde erstellen.');
-  st('qft','QFT-Abnahme',G);
-  if(ir==='neg'){st('qftpos','QFT positiv? → Nein',G);return here('keinw','Zeugnis nach § 36 Abs. 4 IfSG (QFT negativ)',G,'<b>QFT negativ.</b> Ärztliche Untersuchung und QFT bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');}
-  st('qftpos','QFT positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Ja',G);
+  if(ir==='')return here('qft','IGRA-Abnahme',G,'<b>IGRA abnehmen</b>'+(cb?' ('+cb+')':'')+'. Bei Kindern ist der IGRA die Screeningmethode nach § 36 IfSG. Bei negativem Ergebnis und unauffälliger ärztlicher Untersuchung Zeugnis erstellen; bei positivem IGRA folgt das Röntgen in der Pädiatrie.');
+  if(ir==='ind')return here('qft','IGRA-Abnahme: Ergebnis nicht verwertbar',G,'<b>IGRA wiederholen</b> oder alternatives Testverfahren, z. B. Tuberkulin-Hauttest (THT), prüfen. Zeugnis erst nach ärztlicher Bewertung der verfügbaren Befunde erstellen.');
+  if(ir==='declined')return here('qft','IGRA-Abnahme: nicht durchgeführt',G,'<b>IGRA nicht durchgeführt.</b> Vorgehen ärztlich festlegen; Zeugnis erst nach Bewertung der verfügbaren Befunde erstellen.');
+  st('qft','IGRA-Abnahme',G);
+  if(ir==='neg'){st('qftpos','IGRA positiv? → Nein',G);return here('keinw','Zeugnis nach § 36 Abs. 4 IfSG (IGRA negativ)',G,'<b>IGRA negativ.</b> Ärztliche Untersuchung und IGRA bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');}
+  st('qftpos','IGRA positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Ja',G);
   if(rr==='')return here('rxk','Röntgen zum Ausschluss einer aktiven TB',PD+' (Kinderklinik oder Kinderradiologie)','<b>Röntgen-Thorax</b> zum Ausschluss einer aktiven TB veranlassen (Kinderklinik oder Kinderradiologie). Zeugnis erst nach Bewertung der Befunde ausstellen.');
   st('rxk','Röntgen zum Ausschluss einer aktiven TB',PD+' (Kinderklinik oder Kinderradiologie)');
   if(rr==='abn'){st('rxkauf','Befund auffällig? → Ja',PD);return here('abklk','Abklärung aktive TB, ggf. Behandlung',PD+' (Kinderkrankenhaus)','<b>Unverzüglich TB-Abklärung</b> im Kinderkrankenhaus, ggf. Behandlung. Zeugnis erst nach Bewertung der Befunde ausstellen.','urgent');}
@@ -624,7 +625,7 @@ function planGen(){
  }
  if(con)return optStage(false,true);
  st('u15a','Unter 15 Jahre alt? → Nein',G);
- if(preg){st('preg','Schwangerschaft? → Ja (QFT als Ersttest, Röntgen nur bei positivem QFT nach ärztlicher Abwägung)',G);return optStage(false,true);}
+ if(preg){st('preg','Schwangerschaft? → Ja (IGRA als Ersttest, Röntgen nur bei positivem IGRA nach ärztlicher Abwägung)',G);return optStage(false,true);}
  st('preg','Schwangerschaft? → Nein',G);
  const Q='Inzidenz im Herkunftsland >100/100.000 oder MDR/RR-Rate >10 % (unter neuen Fällen)?';
  if(inc===null)return here('inz',Q,G,'Noch klären: Herkunftsland.');
@@ -638,14 +639,14 @@ function planGen(){
   st('rxauf','Röntgenbefund auffällig? → Nein',TZ);
   const QO='Inzidenz >100/100.000 oder komplexe Fluchtroute (Kriegs-/Krisenregion)?';
   if(!high&&!v('route'))return here('qfto',QO,G,'<b>Röntgenbefund unauffällig.</b> Noch klären: Fluchtroute.');
-  if(!high&&n('route')){st('qfto',QO+' → Nein',G);return here('keinq','Zeugnis nach § 36 Abs. 4 IfSG (kein QFT, Röntgenbefund unauffällig)',G,'<b>Röntgenbefund unauffällig, kein QFT-Angebot.</b> '+ENDG);}
+  if(!high&&n('route')){st('qfto',QO+' → Nein',G);return here('keinq','Zeugnis nach § 36 Abs. 4 IfSG (kein IGRA, Röntgenbefund unauffällig)',G,'<b>Röntgenbefund unauffällig, kein IGRA-Angebot.</b> '+ENDG);}
   st('qfto',QO+' → Ja ('+(high?'Inzidenz >100/100.000':'komplexe Fluchtroute')+')',G);
   return optStage(true);
  }
  st('inz',Q+' → Nein ('+detail+')',G);
  const RQ='Risikofaktor komplexe Fluchtroute (Kriegs-/Krisenregion)?';
  if(!v('route'))return here('route',RQ,G,'Noch klären: Fluchtroute.');
- if(n('route')){st('route',RQ+' → Nein',G);return here('kein','Zeugnis nach § 36 Abs. 4 IfSG (kein Röntgen, kein QFT)',G,'<b>Kein Röntgen und kein QFT.</b> '+ENDG);}
+ if(n('route')){st('route',RQ+' → Nein',G);return here('kein','Zeugnis nach § 36 Abs. 4 IfSG (kein Röntgen, kein IGRA)',G,'<b>Kein Röntgen und kein IGRA.</b> '+ENDG);}
  st('route',RQ+' → Ja',G);
  return optStage(false);
 }
@@ -660,8 +661,8 @@ function planUma(){
  const inc=c?Math.max(c[0],t?t[0]:0):t?t[0]:null,m=c?(c[1]??null):null;
  const high=inc!==null&&inc>100,mhigh=m!==null&&m>.1,preg=y('preg');
  const ir=v('igresult'),rr=v('rxresult');
- if(y('risk'))R.hint='<b>Zusätzlicher Risikofaktor (HIV, Immunsuppression, schwere Grunderkrankung oder frühere TB):</b> individuelle ärztliche Bewertung bei der untersuchenden Stelle; ärztlich prüfen, ob unabhängig vom Herkunftsland ein QFT angeboten wird. Ein negativer QFT schließt eine TBI bei Immunsuppression nicht sicher aus. Bei HIV gelten für die präventive Therapie die Empfehlungen der Sk2-Leitlinie. Bei früherer TB oder radiologischen Residuen Follow-up-Screening innerhalb eines Jahres anbieten (Empf. 19).';
- R.legal=a<15?'Ärztliches Zeugnis nach § 36 Abs. 4 IfSG auf Grundlage der sonstigen Befunde; zunächst kein Röntgen-Thorax. Das Vorgehen mit QFT und ggf. Röntgen ist das hier vorgesehene medizinische Vorgehen, nicht der gesetzlich festgelegte Wortlaut.':'Ärztliches Zeugnis nach § 36 Abs. 4 IfSG über fehlende Anhaltspunkte für ansteckungsfähige Lungentuberkulose.';
+ if(y('risk'))R.hint='<b>Zusätzlicher Risikofaktor (HIV, Immunsuppression, schwere Grunderkrankung oder frühere TB):</b> individuelle ärztliche Bewertung bei der untersuchenden Stelle; ärztlich prüfen, ob unabhängig vom Herkunftsland ein IGRA angeboten wird. Ein negativer IGRA schließt eine TBI bei Immunsuppression nicht sicher aus. Bei HIV gelten für die präventive Therapie die Empfehlungen der Sk2-Leitlinie. Bei früherer TB oder radiologischen Residuen Follow-up-Screening innerhalb eines Jahres anbieten (Empf. 19).';
+ R.legal=a<15?'Ärztliches Zeugnis nach § 36 Abs. 4 IfSG auf Grundlage der sonstigen Befunde; zunächst kein Röntgen-Thorax. Das Vorgehen mit IGRA und ggf. Röntgen ist das hier vorgesehene medizinische Vorgehen, nicht der gesetzlich festgelegte Wortlaut.':'Ärztliches Zeugnis nach § 36 Abs. 4 IfSG über fehlende Anhaltspunkte für ansteckungsfähige Lungentuberkulose.';
  st('start','Gesundheitsuntersuchung UMA nach § 36 Abs. 4 IfSG',G);
  if(y('sym')){
   st('anam','Anamnese und klinische Untersuchung',G);st('sym','Typische TB-Symptome oder Befunde? → Ja',G);
@@ -673,30 +674,30 @@ function planUma(){
  st('anam','Anamnese und klinische Untersuchung',G);st('sym','Typische TB-Symptome oder Befunde? → Nein',G);st('contact',con?'Infektionsrelevanter TB-Kontakt? → Ja':'Infektionsrelevanter TB-Kontakt? → Nein',G);R.con=con;
  const pregNote=preg?' Schwangerschaft: Röntgen nur nach ärztlicher Abwägung; Befundgrundlage ärztlich festlegen.':(v('preg')===''?' Vorher Schwangerschaftsstatus klären.':'');
  const optStage=(doneTRU,skipOpt)=>{
-  if(skipOpt&&ir==='')return here('qft','QFT-Abnahme',G,'<b>QFT abnehmen</b> (infektionsrelevanter TB-Kontakt).');
-  if(!skipOpt&&ir==='')return here('opt','Empfehlung TBI-Screening (QFT)',G,(doneTRU?'<b>Röntgenbefund unauffällig.</b> ':'')+'<b>Empfehlung TBI-Screening (QFT):</b> QFT abnehmen.'+(doneTRU?'':' Kein initiales Röntgen.'));
-  if(!skipOpt)st('opt','Empfehlung TBI-Screening (QFT)',G);
-  if(ir==='declined'){R.next='QFT abgelehnt bzw. nicht durchgeführt. '+ENDU;R.who=G;return R;}
-  if(ir==='ind')return here('qft','QFT-Abnahme: Ergebnis nicht verwertbar',G,'<b>QFT wiederholen</b> oder alternatives Testverfahren prüfen.');
-  st('qft','QFT-Abnahme',G);
-  if(ir==='neg'){st('qftpos','QFT positiv? → Nein',G);return here('keinw','Kein weiterer Handlungsbedarf',G,'<b>QFT negativ.</b> Kein weiterer Handlungsbedarf. '+ENDU);}
-  st('qftpos','QFT positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Nein',G);
+  if(skipOpt&&ir==='')return here('qft','IGRA-Abnahme',G,'<b>IGRA abnehmen</b> (infektionsrelevanter TB-Kontakt).');
+  if(!skipOpt&&ir==='')return here('opt','Empfehlung TBI-Screening (IGRA)',G,(doneTRU?'<b>Röntgenbefund unauffällig.</b> ':'')+'<b>Empfehlung TBI-Screening (IGRA):</b> IGRA abnehmen (bevorzugt; alternativ Tuberkulin-Hauttest, THT, Empf. 5/P3).'+(doneTRU?'':' Kein initiales Röntgen.'));
+  if(!skipOpt)st('opt','Empfehlung TBI-Screening (IGRA)',G);
+  if(ir==='declined'){R.next='IGRA abgelehnt bzw. nicht durchgeführt. '+ENDU;R.who=G;return R;}
+  if(ir==='ind')return here('qft','IGRA-Abnahme: Ergebnis nicht verwertbar',G,'<b>IGRA wiederholen</b> oder alternatives Testverfahren, z. B. Tuberkulin-Hauttest (THT), prüfen.');
+  st('qft','IGRA-Abnahme',G);
+  if(ir==='neg'){st('qftpos','IGRA positiv? → Nein',G);return here('keinw','Kein weiterer Handlungsbedarf',G,'<b>IGRA negativ.</b> Kein weiterer Handlungsbedarf. '+ENDU);}
+  st('qftpos','IGRA positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Nein',G);
   const pt=()=>here('pt15','Präventive Therapie ab 15 Jahren',NP,'<b>Aktive TB ausgeschlossen:</b> präventive Therapie bei niedergelassenen Lungenfachärzt(inn)en oder Infektiolog(inn)en (bevorzugt 4R oder 3HR, Empf. 6).'+(mhigh?' Bei MDR/RR-Herkunft individuelle Nutzen-Risiko-Abwägung.':''));
   const ab=()=>here('abkl','Abklärung aktive TB, ggf. Behandlung',PN,'<b>Unverzüglich TB-Abklärung</b> stationär in einer pneumologischen Abteilung oder in der Pädiatrie, ggf. Behandlung.','urgent');
   if(doneTRU){st('trufalls','TRU bereits erfolgt (unauffällig)',TZ);st('truauf','TRU-Befund auffällig? → Nein',TZ);return pt();}
-  if(rr==='')return here('trufalls','Röntgen-Thorax-Untersuchung (TRU), falls noch nicht erfolgt',TZ,'<b>QFT positiv: Röntgen-Thorax-Untersuchung (TRU)</b> in der Röntgenstelle (vor Ort oder in beauftragter Radiologie) zum Ausschluss einer aktiven TB.'+pregNote);
+  if(rr==='')return here('trufalls','Röntgen-Thorax-Untersuchung (TRU), falls noch nicht erfolgt',TZ,'<b>IGRA positiv: Röntgen-Thorax-Untersuchung (TRU)</b> in der Röntgenstelle (vor Ort oder in beauftragter Radiologie) zum Ausschluss einer aktiven TB.'+pregNote);
   st('trufalls','Röntgen-Thorax-Untersuchung (TRU)',TZ);
   if(rr==='abn'){st('truauf','TRU-Befund auffällig? → Ja',TZ);return ab();}
   st('truauf','TRU-Befund auffällig? → Nein',TZ);return pt();
  };
  if(a<15){
   if(!con)st('u15a','Unter 15 Jahre alt? → Ja (UMA-Status gilt als Risikofaktor)',G);
-  if(ir==='')return here('qft','QFT-Abnahme',G,'<b>QFT abnehmen.</b> Bei Kindern ist der QFT die Screeningmethode nach § 36 IfSG. Bei negativem Ergebnis und unauffälliger ärztlicher Untersuchung Zeugnis erstellen; bei positivem QFT folgt das Röntgen in der Pädiatrie.');
-  if(ir==='ind')return here('qft','QFT-Abnahme: Ergebnis nicht verwertbar',G,'<b>QFT wiederholen</b> oder alternatives Testverfahren prüfen. Zeugnis erst nach ärztlicher Bewertung der verfügbaren Befunde erstellen.');
-  if(ir==='declined')return here('qft','QFT-Abnahme: nicht durchgeführt',G,'<b>QFT nicht durchgeführt.</b> Vorgehen ärztlich festlegen; Zeugnis erst nach Bewertung der verfügbaren Befunde erstellen.');
-  st('qft','QFT-Abnahme',G);
-  if(ir==='neg'){st('qftpos','QFT positiv? → Nein',G);return here('keinw','Kein weiterer Handlungsbedarf',G,'<b>QFT negativ.</b> Ärztliche Untersuchung und QFT bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');}
-  st('qftpos','QFT positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Ja',G);
+  if(ir==='')return here('qft','IGRA-Abnahme',G,'<b>IGRA abnehmen.</b> Bei Kindern ist der IGRA die Screeningmethode nach § 36 IfSG. Bei negativem Ergebnis und unauffälliger ärztlicher Untersuchung Zeugnis erstellen; bei positivem IGRA folgt das Röntgen in der Pädiatrie.');
+  if(ir==='ind')return here('qft','IGRA-Abnahme: Ergebnis nicht verwertbar',G,'<b>IGRA wiederholen</b> oder alternatives Testverfahren, z. B. Tuberkulin-Hauttest (THT), prüfen. Zeugnis erst nach ärztlicher Bewertung der verfügbaren Befunde erstellen.');
+  if(ir==='declined')return here('qft','IGRA-Abnahme: nicht durchgeführt',G,'<b>IGRA nicht durchgeführt.</b> Vorgehen ärztlich festlegen; Zeugnis erst nach Bewertung der verfügbaren Befunde erstellen.');
+  st('qft','IGRA-Abnahme',G);
+  if(ir==='neg'){st('qftpos','IGRA positiv? → Nein',G);return here('keinw','Kein weiterer Handlungsbedarf',G,'<b>IGRA negativ.</b> Ärztliche Untersuchung und IGRA bewerten; wenn keine Anhaltspunkte für ansteckungsfähige Lungentuberkulose bestehen, Zeugnis nach § 36 Abs. 4 IfSG ausstellen. Kein routinemäßiges Röntgen. Über das weiterhin bestehende Erkrankungsrisiko aufklären.');}
+  st('qftpos','IGRA positiv? → Ja (bei fehlenden Symptomen keine Quarantäne bis zur Röntgenuntersuchung notwendig)',G);st('u15b','Unter 15 Jahre alt? → Ja',G);
   if(rr==='')return here('rxk','Röntgen zum Ausschluss einer aktiven TB',PD+' (Kinderklinik oder Kinderradiologie)','<b>Röntgen-Thorax</b> zum Ausschluss einer aktiven TB veranlassen (Kinderklinik oder Kinderradiologie). Zeugnis erst nach Bewertung der Befunde ausstellen.');
   st('rxk','Röntgen zum Ausschluss einer aktiven TB',PD+' (Kinderklinik oder Kinderradiologie)');
   if(rr==='abn'){st('rxkauf','Befund auffällig? → Ja',PD);return here('abklk','Abklärung aktive TB, ggf. Behandlung',PD+' (Kinderkrankenhaus)','<b>Unverzüglich TB-Abklärung</b> im Kinderkrankenhaus, ggf. Behandlung. Zeugnis erst nach Bewertung der Befunde ausstellen.','urgent');}
@@ -717,14 +718,14 @@ function planUma(){
   st('rxauf','Röntgenbefund auffällig? → Nein',TZ);
   const QO='Inzidenz >100/100.000 oder komplexe Fluchtroute (Kriegs-/Krisenregion)?';
   if(!high&&!v('route'))return here('qfto',QO,G,'<b>Röntgenbefund unauffällig.</b> Noch klären: Fluchtroute.');
-  if(!high&&n('route')){st('qfto',QO+' → Nein',G);return here('keinq','Kein QFT (Röntgenbefund unauffällig)',G,'<b>Röntgenbefund unauffällig, kein QFT-Angebot.</b> '+ENDU);}
+  if(!high&&n('route')){st('qfto',QO+' → Nein',G);return here('keinq','Kein IGRA (Röntgenbefund unauffällig)',G,'<b>Röntgenbefund unauffällig, kein IGRA-Angebot.</b> '+ENDU);}
   st('qfto',QO+' → Ja ('+(high?'Inzidenz >100/100.000':'komplexe Fluchtroute')+')',G);
   return optStage(true);
  }
  st('inz',Q+' → Nein ('+detail+')',G);
  const RQ='Risikofaktor komplexe Fluchtroute (Kriegs-/Krisenregion)?';
  if(!v('route'))return here('route',RQ,G,'Noch klären: Fluchtroute.');
- if(n('route')){st('route',RQ+' → Nein',G);return here('kein','Kein Röntgen, kein QFT (nur Anamnese)',G,'<b>Kein Röntgen und kein QFT.</b> '+ENDU);}
+ if(n('route')){st('route',RQ+' → Nein',G);return here('kein','Kein Röntgen, kein IGRA (nur Anamnese)',G,'<b>Kein Röntgen und kein IGRA.</b> '+ENDU);}
  st('route',RQ+' → Ja',G);
  return optStage(false);
 }
