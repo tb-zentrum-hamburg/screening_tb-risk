@@ -2,13 +2,15 @@
 
 Interaktive Entscheidungshilfen für das risikoadaptierte TB-Screening neu zugewanderter Personen nach S3-Leitlinie TB-Risk 2025 (AWMF 020-029), neutral gestaltet und ohne Standortbezug, anwendbar für alle Gesundheitsämter und ärztlichen Praxen. Statische Seiten ohne Server, ohne Datenerhebung.
 
+**Privates Projekt, ohne Gewähr.** Bei Fragen, Fehlermeldungen und Änderungswünschen: christian.schwarzbach@hamburg-mitte.hamburg.de.
+
 Eigenständiges Projekt, parallel zur Hamburger Fassung (Repository `tb-zentrum-hamburg/screening`). Fachliche Änderungen betreffen häufig beide Fassungen und werden in beiden mit eigener Version nachgeführt.
 
 | Datei | Inhalt | Version | Stand |
 |---|---|---|---|
-| `index.html` | Auswahlseite | 1.4 | 23.11.2026 |
-| `ifsg36.html` | Untersuchung nach § 36 IfSG mit Wahl der Personengruppe (allgemein, Aufnahme-/Ankunftseinrichtung, UMA) | 1.5 | 23.11.2026 |
-| `praxis.html` | Freiwilliges Screening ohne Indikation nach § 36 IfSG (Haus-, Betriebs- und weitere Ärzt(inn)en) | 1.5 | 23.11.2026 |
+| `index.html` | Auswahlseite | 1.5 | 24.11.2026 |
+| `ifsg36.html` | Untersuchung nach § 36 IfSG mit Wahl der Personengruppe (allgemein, Aufnahme-/Ankunftseinrichtung, UMA) | 1.6 | 24.11.2026 |
+| `praxis.html` | Freiwilliges Screening ohne Indikation nach § 36 IfSG (Haus-, Betriebs- und weitere Ärzt(inn)en) | 1.6 | 24.11.2026 |
 
 Fachliche Arbeitsversionen, keine automatisierte Diagnose, keine rechtsverbindliche Freigabe. Änderungsverlauf jeweils in der Seite.
 
